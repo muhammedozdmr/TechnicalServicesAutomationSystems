@@ -50,5 +50,12 @@ namespace TeknikServisOtomasyon
             formStatisticList.MdiParent = this;
             formStatisticList.Show();
         }
+
+        private void barMarkStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormBrand formBrand = new Formlar.FormBrand();
+            formBrand.MdiParent = this;
+            formBrand.Show();
+        }
     }
 }

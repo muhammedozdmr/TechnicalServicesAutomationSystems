@@ -102,7 +102,6 @@
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
-            this.ribbonControl1.SearchEditItem,
             this.barProductList,
             this.barNewProduct,
             this.barSearchProduct,
@@ -200,6 +199,7 @@
             this.barMarkStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barMarkStatistics.ImageOptions.Image")));
             this.barMarkStatistics.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barMarkStatistics.ImageOptions.LargeImage")));
             this.barMarkStatistics.Name = "barMarkStatistics";
+            this.barMarkStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barMarkStatistics_ItemClick);
             // 
             // barBrokenProductList
             // 
