@@ -28,7 +28,7 @@ namespace TeknikServisOtomasyon
         public string TELEFON { get; set; }
         public string MAIL { get; set; }
         public string IL { get; set; }
-        public byte[] ILCE { get; set; }
+        public string ILCE { get; set; }
         public string BANKA { get; set; }
         public string VERGIDAIRESI { get; set; }
         public string VERGINO { get; set; }

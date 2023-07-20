@@ -97,11 +97,29 @@
     <Compile Include="Formlar\FormCreateCategory.Designer.cs">
       <DependentUpon>FormCreateCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FormCreateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormCreateCustomer.Designer.cs">
+      <DependentUpon>FormCreateCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FormCreateProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\FormCreateProduct.Designer.cs">
       <DependentUpon>FormCreateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FormCustomerCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormCustomerCity.Designer.cs">
+      <DependentUpon>FormCustomerCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FormCustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormCustomerList.Designer.cs">
+      <DependentUpon>FormCustomerList.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FormProductList.cs">
       <SubType>Form</SubType>
@@ -192,8 +210,17 @@
     <EmbeddedResource Include="Formlar\FormCreateCategory.resx">
       <DependentUpon>FormCreateCategory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormCreateCustomer.resx">
+      <DependentUpon>FormCreateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormCreateProduct.resx">
       <DependentUpon>FormCreateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormCustomerCity.resx">
+      <DependentUpon>FormCustomerCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormCustomerList.resx">
+      <DependentUpon>FormCustomerList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormProductList.resx">
       <DependentUpon>FormProductList.cs</DependentUpon>

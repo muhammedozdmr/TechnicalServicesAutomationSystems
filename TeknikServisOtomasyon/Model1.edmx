@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbTeknikServisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbTeknikServisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -23,12 +23,6 @@
           <Property Name="KULLANICIAD" Type="varchar" MaxLength="10" />
           <Property Name="SIFRE" Type="varchar" MaxLength="10" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'DbTeknikServis.dbo.TBLARACLAR' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="TBLARACLAR">
-          <Property Name="ID" Type="int" />
-          <Property Name="AD" Type="varchar" MaxLength="50" />
-        </EntityType>-->
         <EntityType Name="TBLARIZADETAY">
           <Key>
             <PropertyRef Name="ARIZAID" />
@@ -51,12 +45,12 @@ warning 6013: The table/view 'DbTeknikServis.dbo.TBLARACLAR' does not have a pri
           <Property Name="TELEFON" Type="varchar" MaxLength="20" />
           <Property Name="MAIL" Type="varchar" MaxLength="50" />
           <Property Name="IL" Type="varchar" MaxLength="13" />
-          <Property Name="ILCE" Type="varbinary" MaxLength="30" />
           <Property Name="BANKA" Type="varchar" MaxLength="50" />
           <Property Name="VERGIDAIRESI" Type="varchar" MaxLength="50" />
           <Property Name="VERGINO" Type="varchar" MaxLength="50" />
           <Property Name="STATU" Type="varchar" MaxLength="50" />
           <Property Name="ADRES" Type="varchar" MaxLength="250" />
+          <Property Name="ILCE" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="TBLDEPARTMAN">
           <Key>
@@ -413,8 +407,7 @@ warning 6013: The table/view 'DbTeknikServis.dbo.TBLARACLAR' does not have a pri
             <End Role="TBLURUNTAKIP" EntitySet="TBLURUNTAKIP" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbTeknikServisModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -458,7 +451,7 @@ warning 6013: The table/view 'DbTeknikServis.dbo.TBLARACLAR' does not have a pri
           <Property Name="TELEFON" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="IL" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
-          <Property Name="ILCE" Type="Binary" MaxLength="30" FixedLength="false" />
+          <Property Name="ILCE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="BANKA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="VERGIDAIRESI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="VERGINO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />

@@ -267,6 +267,7 @@
             this.barNewCustomer.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barNewCustomer.ImageOptions.Image")));
             this.barNewCustomer.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barNewCustomer.ImageOptions.LargeImage")));
             this.barNewCustomer.Name = "barNewCustomer";
+            this.barNewCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barNewCustomer_ItemClick);
             // 
             // barCustomerList
             // 
@@ -275,6 +276,7 @@
             this.barCustomerList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCustomerList.ImageOptions.Image")));
             this.barCustomerList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCustomerList.ImageOptions.LargeImage")));
             this.barCustomerList.Name = "barCustomerList";
+            this.barCustomerList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCustomerList_ItemClick);
             // 
             // barCustomerCityStatistics
             // 
@@ -283,6 +285,7 @@
             this.barCustomerCityStatistics.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCustomerCityStatistics.ImageOptions.Image")));
             this.barCustomerCityStatistics.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCustomerCityStatistics.ImageOptions.LargeImage")));
             this.barCustomerCityStatistics.Name = "barCustomerCityStatistics";
+            this.barCustomerCityStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCustomerCityStatistics_ItemClick);
             // 
             // barCustomerActions
             // 

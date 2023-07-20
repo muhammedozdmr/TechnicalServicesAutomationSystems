@@ -36,7 +36,6 @@ namespace TeknikServisOtomasyon.Formlar
             chartControl1.Series["Series 1"].Points.AddPoint("Toshiba", 2);
             chartControl1.Series["Series 1"].Points.AddPoint("Apple", 5);
             chartControl1.Series["Series 1"].Points.AddPoint("Bosch", 1);
-
             chartControl2.Series["Series 1"].Points.AddPoint("Beyaz Eşya", 4);
             chartControl2.Series["Series 1"].Points.AddPoint("Bilgisayar", 6);
             chartControl2.Series["Series 1"].Points.AddPoint("Küçük Ev Aletleri", 3);

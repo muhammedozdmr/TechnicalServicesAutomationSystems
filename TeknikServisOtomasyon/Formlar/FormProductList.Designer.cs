@@ -65,10 +65,10 @@
             // 
             // gridProductList
             // 
-            this.gridProductList.Location = new System.Drawing.Point(1, 3);
+            this.gridProductList.Location = new System.Drawing.Point(2, 4);
             this.gridProductList.MainView = this.gridView1;
             this.gridProductList.Name = "gridProductList";
-            this.gridProductList.Size = new System.Drawing.Size(1456, 806);
+            this.gridProductList.Size = new System.Drawing.Size(1455, 806);
             this.gridProductList.TabIndex = 0;
             this.gridProductList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -103,7 +103,7 @@
             this.groupProduct.Controls.Add(this.lblProductMark);
             this.groupProduct.Controls.Add(this.txtProductName);
             this.groupProduct.Controls.Add(this.lblProductName);
-            this.groupProduct.Location = new System.Drawing.Point(1463, 3);
+            this.groupProduct.Location = new System.Drawing.Point(1463, 4);
             this.groupProduct.Name = "groupProduct";
             this.groupProduct.Size = new System.Drawing.Size(427, 806);
             this.groupProduct.TabIndex = 3;

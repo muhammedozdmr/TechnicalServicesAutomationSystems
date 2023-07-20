@@ -265,6 +265,7 @@
             this.Controls.Add(this.gridCategoryList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormCategoryList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Kategori Listesi";
             this.Load += new System.EventHandler(this.FormCategoryList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridCategoryList)).EndInit();

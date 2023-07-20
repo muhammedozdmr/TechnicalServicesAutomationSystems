@@ -57,5 +57,26 @@ namespace TeknikServisOtomasyon
             formBrand.MdiParent = this;
             formBrand.Show();
         }
+
+        private void barCustomerList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormCustomerList formCustomer = new Formlar.FormCustomerList();
+            formCustomer.MdiParent = this;
+            formCustomer.Show();
+        }
+
+        private void barCustomerCityStatistics_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormCustomerCity formCustomerCity = new Formlar.FormCustomerCity();
+            formCustomerCity.MdiParent = this;
+            formCustomerCity.Show();
+        }
+
+        private void barNewCustomer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormCreateCustomer formCreateCustomer = new Formlar.FormCreateCustomer();
+            //formCreateCustomer.MdiParent = this;
+            formCreateCustomer.Show();
+        }
     }
 }

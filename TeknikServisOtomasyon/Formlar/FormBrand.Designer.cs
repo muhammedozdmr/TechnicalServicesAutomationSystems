@@ -587,6 +587,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gridBrandList);
             this.Name = "FormBrand";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Markalar";
             this.Load += new System.EventHandler(this.FormBrand_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridBrandList)).EndInit();
