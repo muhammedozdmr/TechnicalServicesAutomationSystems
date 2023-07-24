@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraRichEdit.API.RichTextBox;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,7 +36,7 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            ClearForm();
         }
 
         private void FormCreateCustomer_Load(object sender, EventArgs e)
@@ -47,6 +48,20 @@ namespace TeknikServisOtomasyon.Formlar
         private void cancelButton_EditValueChanged(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void ClearForm()
+        {
+            txtName.Text = string.Empty;
+            txtSurname.Text = string.Empty;
+            txtStatu.Text = string.Empty;
+            txtMail.Text = string.Empty;
+            txtPhone.Text = string.Empty;
+            txtBank.Text = string.Empty;
+            txtTaxDepartment.Text = string.Empty;
+            txtTaxNo.Text = string.Empty;
+            txtAddress.Text = string.Empty;
+            txtCity.Text = string.Empty;
+            txtTown.Text = string.Empty;
         }
     }
 }

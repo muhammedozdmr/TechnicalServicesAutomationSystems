@@ -350,6 +350,7 @@
             this.barEmployeeList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barEmployeeList.ImageOptions.Image")));
             this.barEmployeeList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barEmployeeList.ImageOptions.LargeImage")));
             this.barEmployeeList.Name = "barEmployeeList";
+            this.barEmployeeList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barEmployeeList_ItemClick);
             // 
             // barNewEmployee
             // 
@@ -366,6 +367,7 @@
             this.barDepartmantList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barDepartmantList.ImageOptions.Image")));
             this.barDepartmantList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barDepartmantList.ImageOptions.LargeImage")));
             this.barDepartmantList.Name = "barDepartmantList";
+            this.barDepartmantList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barDepartmantList_ItemClick);
             // 
             // barNewDepartmant
             // 
@@ -374,6 +376,7 @@
             this.barNewDepartmant.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barNewDepartmant.ImageOptions.Image")));
             this.barNewDepartmant.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barNewDepartmant.ImageOptions.LargeImage")));
             this.barNewDepartmant.Name = "barNewDepartmant";
+            this.barNewDepartmant.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barNewDepartmant_ItemClick);
             // 
             // barCalculator
             // 
@@ -382,6 +385,7 @@
             this.barCalculator.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCalculator.ImageOptions.Image")));
             this.barCalculator.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCalculator.ImageOptions.LargeImage")));
             this.barCalculator.Name = "barCalculator";
+            this.barCalculator.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCalculator_ItemClick);
             // 
             // barCreateNewNote
             // 
@@ -398,6 +402,7 @@
             this.barCurrency.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCurrency.ImageOptions.Image")));
             this.barCurrency.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCurrency.ImageOptions.LargeImage")));
             this.barCurrency.Name = "barCurrency";
+            this.barCurrency.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barCurrency_ItemClick);
             // 
             // barNews
             // 
@@ -422,6 +427,7 @@
             this.barWord.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barWord.ImageOptions.Image")));
             this.barWord.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barWord.ImageOptions.LargeImage")));
             this.barWord.Name = "barWord";
+            this.barWord.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barWord_ItemClick);
             // 
             // barExcel
             // 
@@ -430,6 +436,7 @@
             this.barExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barExcel.ImageOptions.Image")));
             this.barExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barExcel.ImageOptions.LargeImage")));
             this.barExcel.Name = "barExcel";
+            this.barExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barExcel_ItemClick);
             // 
             // barHelp
             // 
@@ -661,6 +668,7 @@
             // 
             // TeknikServisForm
             // 
+            this.AllowMdiBar = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1938, 1068);

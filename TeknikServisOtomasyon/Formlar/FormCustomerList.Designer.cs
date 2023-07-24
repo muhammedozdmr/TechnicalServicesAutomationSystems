@@ -43,20 +43,20 @@
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.txtProductID = new DevExpress.XtraEditors.TextEdit();
-            this.lblProductID = new DevExpress.XtraEditors.LabelControl();
-            this.btnProductList = new DevExpress.XtraEditors.SimpleButton();
-            this.btnUpdateProduct = new DevExpress.XtraEditors.SimpleButton();
-            this.btnDeleteProduct = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSaveProduct = new DevExpress.XtraEditors.SimpleButton();
+            this.lblID = new DevExpress.XtraEditors.LabelControl();
+            this.btnList = new DevExpress.XtraEditors.SimpleButton();
+            this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
+            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.lblCategory = new DevExpress.XtraEditors.LabelControl();
             this.txtStock = new DevExpress.XtraEditors.TextEdit();
             this.lblStock = new DevExpress.XtraEditors.LabelControl();
             this.lblSellPrice = new DevExpress.XtraEditors.LabelControl();
             this.lblBuyPrice = new DevExpress.XtraEditors.LabelControl();
             this.txtProductMark = new DevExpress.XtraEditors.TextEdit();
-            this.lblProductMark = new DevExpress.XtraEditors.LabelControl();
+            this.lblMark = new DevExpress.XtraEditors.LabelControl();
             this.txtProductName = new DevExpress.XtraEditors.TextEdit();
-            this.lblProductName = new DevExpress.XtraEditors.LabelControl();
+            this.lblName = new DevExpress.XtraEditors.LabelControl();
             this.gridList = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
@@ -116,20 +116,20 @@
             this.groupProduct.Controls.Add(this.textEdit3);
             this.groupProduct.Controls.Add(this.textEdit4);
             this.groupProduct.Controls.Add(this.txtProductID);
-            this.groupProduct.Controls.Add(this.lblProductID);
-            this.groupProduct.Controls.Add(this.btnProductList);
-            this.groupProduct.Controls.Add(this.btnUpdateProduct);
-            this.groupProduct.Controls.Add(this.btnDeleteProduct);
-            this.groupProduct.Controls.Add(this.btnSaveProduct);
+            this.groupProduct.Controls.Add(this.lblID);
+            this.groupProduct.Controls.Add(this.btnList);
+            this.groupProduct.Controls.Add(this.btnUpdate);
+            this.groupProduct.Controls.Add(this.btnDelete);
+            this.groupProduct.Controls.Add(this.btnSave);
             this.groupProduct.Controls.Add(this.lblCategory);
             this.groupProduct.Controls.Add(this.txtStock);
             this.groupProduct.Controls.Add(this.lblStock);
             this.groupProduct.Controls.Add(this.lblSellPrice);
             this.groupProduct.Controls.Add(this.lblBuyPrice);
             this.groupProduct.Controls.Add(this.txtProductMark);
-            this.groupProduct.Controls.Add(this.lblProductMark);
+            this.groupProduct.Controls.Add(this.lblMark);
             this.groupProduct.Controls.Add(this.txtProductName);
-            this.groupProduct.Controls.Add(this.lblProductName);
+            this.groupProduct.Controls.Add(this.lblName);
             this.groupProduct.Location = new System.Drawing.Point(1464, 2);
             this.groupProduct.Name = "groupProduct";
             this.groupProduct.Size = new System.Drawing.Size(427, 806);
@@ -235,49 +235,49 @@
             this.txtProductID.Size = new System.Drawing.Size(292, 20);
             this.txtProductID.TabIndex = 20;
             // 
-            // lblProductID
+            // lblID
             // 
-            this.lblProductID.Location = new System.Drawing.Point(49, 56);
-            this.lblProductID.Name = "lblProductID";
-            this.lblProductID.Size = new System.Drawing.Size(43, 13);
-            this.lblProductID.TabIndex = 19;
-            this.lblProductID.Text = "CARİ ID:";
+            this.lblID.Location = new System.Drawing.Point(49, 56);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(43, 13);
+            this.lblID.TabIndex = 19;
+            this.lblID.Text = "CARİ ID:";
             // 
-            // btnProductList
+            // btnList
             // 
-            this.btnProductList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnProductList.ImageOptions.Image")));
-            this.btnProductList.Location = new System.Drawing.Point(107, 496);
-            this.btnProductList.Name = "btnProductList";
-            this.btnProductList.Size = new System.Drawing.Size(292, 38);
-            this.btnProductList.TabIndex = 18;
-            this.btnProductList.Text = "LİSTELE";
+            this.btnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnProductList.ImageOptions.Image")));
+            this.btnList.Location = new System.Drawing.Point(107, 496);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(292, 38);
+            this.btnList.TabIndex = 18;
+            this.btnList.Text = "LİSTELE";
             // 
-            // btnUpdateProduct
+            // btnUpdate
             // 
-            this.btnUpdateProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateProduct.ImageOptions.Image")));
-            this.btnUpdateProduct.Location = new System.Drawing.Point(106, 452);
-            this.btnUpdateProduct.Name = "btnUpdateProduct";
-            this.btnUpdateProduct.Size = new System.Drawing.Size(292, 38);
-            this.btnUpdateProduct.TabIndex = 17;
-            this.btnUpdateProduct.Text = "GÜNCELLE";
+            this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateProduct.ImageOptions.Image")));
+            this.btnUpdate.Location = new System.Drawing.Point(106, 452);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(292, 38);
+            this.btnUpdate.TabIndex = 17;
+            this.btnUpdate.Text = "GÜNCELLE";
             // 
-            // btnDeleteProduct
+            // btnDelete
             // 
-            this.btnDeleteProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteProduct.ImageOptions.Image")));
-            this.btnDeleteProduct.Location = new System.Drawing.Point(106, 408);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(292, 38);
-            this.btnDeleteProduct.TabIndex = 16;
-            this.btnDeleteProduct.Text = "SİL";
+            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteProduct.ImageOptions.Image")));
+            this.btnDelete.Location = new System.Drawing.Point(106, 408);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(292, 38);
+            this.btnDelete.TabIndex = 16;
+            this.btnDelete.Text = "SİL";
             // 
-            // btnSaveProduct
+            // btnSave
             // 
-            this.btnSaveProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveProduct.ImageOptions.Image")));
-            this.btnSaveProduct.Location = new System.Drawing.Point(106, 364);
-            this.btnSaveProduct.Name = "btnSaveProduct";
-            this.btnSaveProduct.Size = new System.Drawing.Size(292, 38);
-            this.btnSaveProduct.TabIndex = 15;
-            this.btnSaveProduct.Text = "KAYDET";
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveProduct.ImageOptions.Image")));
+            this.btnSave.Location = new System.Drawing.Point(106, 364);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(292, 38);
+            this.btnSave.TabIndex = 15;
+            this.btnSave.Text = "KAYDET";
             // 
             // lblCategory
             // 
@@ -327,13 +327,13 @@
             this.txtProductMark.Size = new System.Drawing.Size(292, 20);
             this.txtProductMark.TabIndex = 6;
             // 
-            // lblProductMark
+            // lblMark
             // 
-            this.lblProductMark.Location = new System.Drawing.Point(54, 108);
-            this.lblProductMark.Name = "lblProductMark";
-            this.lblProductMark.Size = new System.Drawing.Size(38, 13);
-            this.lblProductMark.TabIndex = 5;
-            this.lblProductMark.Text = "SOYAD:";
+            this.lblMark.Location = new System.Drawing.Point(54, 108);
+            this.lblMark.Name = "lblMark";
+            this.lblMark.Size = new System.Drawing.Size(38, 13);
+            this.lblMark.TabIndex = 5;
+            this.lblMark.Text = "SOYAD:";
             // 
             // txtProductName
             // 
@@ -342,13 +342,13 @@
             this.txtProductName.Size = new System.Drawing.Size(292, 20);
             this.txtProductName.TabIndex = 4;
             // 
-            // lblProductName
+            // lblName
             // 
-            this.lblProductName.Location = new System.Drawing.Point(70, 82);
-            this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(22, 13);
-            this.lblProductName.TabIndex = 3;
-            this.lblProductName.Text = "ADI:";
+            this.lblName.Location = new System.Drawing.Point(70, 82);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(22, 13);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "ADI:";
             // 
             // gridList
             // 
@@ -619,20 +619,20 @@
         private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.TextEdit textEdit4;
         private DevExpress.XtraEditors.TextEdit txtProductID;
-        private DevExpress.XtraEditors.LabelControl lblProductID;
-        private DevExpress.XtraEditors.SimpleButton btnProductList;
-        private DevExpress.XtraEditors.SimpleButton btnUpdateProduct;
-        private DevExpress.XtraEditors.SimpleButton btnDeleteProduct;
-        private DevExpress.XtraEditors.SimpleButton btnSaveProduct;
+        private DevExpress.XtraEditors.LabelControl lblID;
+        private DevExpress.XtraEditors.SimpleButton btnList;
+        private DevExpress.XtraEditors.SimpleButton btnUpdate;
+        private DevExpress.XtraEditors.SimpleButton btnDelete;
+        private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.LabelControl lblCategory;
         private DevExpress.XtraEditors.TextEdit txtStock;
         private DevExpress.XtraEditors.LabelControl lblStock;
         private DevExpress.XtraEditors.LabelControl lblSellPrice;
         private DevExpress.XtraEditors.LabelControl lblBuyPrice;
         private DevExpress.XtraEditors.TextEdit txtProductMark;
-        private DevExpress.XtraEditors.LabelControl lblProductMark;
+        private DevExpress.XtraEditors.LabelControl lblMark;
         private DevExpress.XtraEditors.TextEdit txtProductName;
-        private DevExpress.XtraEditors.LabelControl lblProductName;
+        private DevExpress.XtraEditors.LabelControl lblName;
         private DevExpress.XtraGrid.GridControl gridList;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;

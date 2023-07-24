@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.Pdf.Native;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,19 @@ namespace TeknikServisOtomasyon
             InitializeComponent();
         }
 
+        //private void OpenChildForm(Form childForm)
+        //{
+        //    TabPage tabPage = new TabPage(childForm.Text);
+        //    tabPage.Tag = childForm;
+
+        //    childForm.TopLevel = false;
+        //    childForm.FormBorderStyle = FormBorderStyle.None;
+        //    childForm.Dock = DockStyle.Fill;
+        //    tabPage.Controls.Add(childForm);
+        //    childForm.Show();
+
+        //    tabControl1.TabPages.Add(tabPage);
+        //}
         private void barProductList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.FormProductList formProduct = new Formlar.FormProductList();
@@ -77,6 +91,49 @@ namespace TeknikServisOtomasyon
             Formlar.FormCreateCustomer formCreateCustomer = new Formlar.FormCreateCustomer();
             //formCreateCustomer.MdiParent = this;
             formCreateCustomer.Show();
+        }
+
+        private void barDepartmantList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormDeparmentList formDepartment = new Formlar.FormDeparmentList();
+            formDepartment.MdiParent = this;
+            formDepartment.Show();
+        }
+
+        private void barNewDepartmant_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormCreateDepartment formDepartment = new Formlar.FormCreateDepartment();
+            //formDepartment.MdiParent = this;
+            formDepartment.Show();
+        }
+
+        private void barEmployeeList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormEmployee formEmployee = new Formlar.FormEmployee();
+            formEmployee.MdiParent = this;
+            formEmployee.Show();
+        }
+
+        private void barCalculator_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("Calc.exe");
+        }
+
+        private void barCurrency_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormCurrencies formCurrencies= new Formlar.FormCurrencies();
+            formCurrencies.MdiParent = this;
+            formCurrencies.Show();
+        }
+
+        private void barWord_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("winword");
+        }
+
+        private void barExcel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("excel");
         }
     }
 }
