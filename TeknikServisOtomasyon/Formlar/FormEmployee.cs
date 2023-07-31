@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraRichEdit.API.RichTextBox;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,15 +32,15 @@ namespace TeknikServisOtomasyon.Formlar
                            };
             gridList.DataSource = degerler.ToList();
 
-            lookUpEdit1.Properties.DataSource = (from x in db.TBLDEPARTMen
+            cmbDeparment.Properties.DataSource = (from x in db.TBLDEPARTMen
                                                 select new
                                                 {
                                                     x.ID,
                                                     x.AD
                                                 }).ToList();
-            lookUpEdit1.Properties.NullText = "Departman Seçiniz";
-            lookUpEdit1.Properties.DisplayMember = "AD";
-            lookUpEdit1.Properties.ValueMember = "ID";
+            cmbDeparment.Properties.NullText = "Departman Seçiniz";
+            cmbDeparment.Properties.DisplayMember = "AD";
+            cmbDeparment.Properties.ValueMember = "ID";
 
             string ad1, soyad1, ad2, soyad2, ad3, soyad3, ad4, soyad4;
 
@@ -70,6 +71,45 @@ namespace TeknikServisOtomasyon.Formlar
             labelControl25.Text = ad4 + " " + soyad4;
             labelControl24.Text = db.TBLPERSONELs.First(x => x.ID == 3).TBLDEPARTMAN.AD;
             labelControl23.Text = db.TBLPERSONELs.First(x => x.ID == 3).MAIL;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            TBLPERSONEL p = new TBLPERSONEL();
+            p.AD = txtName.Text;
+            p.SOYAD = txtSurname.Text;
+            p.FOTOGRAF = txtPhoto.Text;
+            p.MAIL = txtMail.Text;
+            p.TELEFON = txtPhone.Text;
+            p.DEPARTMAN = byte.Parse(cmbDeparment.Properties.ValueMember);
+            db.TBLPERSONELs.Add(p);
+            db.SaveChanges();
+            ClearForm();
+        }
+        private void ClearForm()
+        {
+            txtID.Text = null;
+            txtName.Text = string.Empty;
+            txtSurname.Text = string.Empty;
+            cmbDeparment.Properties.ValueMember = null;
+            txtPhoto.Text = string.Empty;
+            txtPhone.Text = string.Empty;
+            txtMail.Text = string.Empty;
+        }
+        private void GetListCategory()
+        {
+            var personal = from p in db.TBLPERSONELs
+                             select new
+                             {
+                                 p.ID,
+                                 p.AD,
+                                 p.SOYAD,
+                                 p.DEPARTMAN,
+                                 p.MAIL,
+                                 p.TELEFON,
+                                 p.FOTOGRAF
+                             };
+            gridList.DataSource = personal.ToList();
         }
     }
 }

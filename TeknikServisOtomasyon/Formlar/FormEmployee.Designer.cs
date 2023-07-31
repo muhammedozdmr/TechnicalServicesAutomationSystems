@@ -40,7 +40,7 @@
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.lblProductMark = new DevExpress.XtraEditors.LabelControl();
-            this.txtProductName = new DevExpress.XtraEditors.TextEdit();
+            this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridList = new DevExpress.XtraGrid.GridControl();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
@@ -55,15 +55,15 @@
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
             this.groupProduct = new DevExpress.XtraEditors.GroupControl();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.cmbDeparment = new DevExpress.XtraEditors.LookUpEdit();
+            this.txtPhone = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtMail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.txtPhoto = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtSurname = new DevExpress.XtraEditors.TextEdit();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.lblProductID = new DevExpress.XtraEditors.LabelControl();
             this.btnList = new DevExpress.XtraEditors.SimpleButton();
@@ -87,7 +87,7 @@
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProductName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
@@ -95,11 +95,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupProduct)).BeginInit();
             this.groupProduct.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbDeparment.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhoto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSurname.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
@@ -223,12 +223,12 @@
             this.lblProductMark.TabIndex = 5;
             this.lblProductMark.Text = "SOYAD:";
             // 
-            // txtProductName
+            // txtName
             // 
-            this.txtProductName.Location = new System.Drawing.Point(106, 79);
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(292, 20);
-            this.txtProductName.TabIndex = 4;
+            this.txtName.Location = new System.Drawing.Point(106, 79);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(292, 20);
+            this.txtName.TabIndex = 4;
             // 
             // gridView1
             // 
@@ -266,6 +266,7 @@
             this.btnSave.Size = new System.Drawing.Size(292, 38);
             this.btnSave.TabIndex = 15;
             this.btnSave.Text = "KAYDET";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // panel4
             // 
@@ -369,15 +370,15 @@
             // 
             // groupProduct
             // 
-            this.groupProduct.Controls.Add(this.lookUpEdit1);
-            this.groupProduct.Controls.Add(this.textEdit5);
+            this.groupProduct.Controls.Add(this.cmbDeparment);
+            this.groupProduct.Controls.Add(this.txtPhone);
             this.groupProduct.Controls.Add(this.labelControl4);
-            this.groupProduct.Controls.Add(this.textEdit2);
+            this.groupProduct.Controls.Add(this.txtMail);
             this.groupProduct.Controls.Add(this.labelControl1);
             this.groupProduct.Controls.Add(this.labelControl2);
-            this.groupProduct.Controls.Add(this.textEdit4);
+            this.groupProduct.Controls.Add(this.txtPhoto);
             this.groupProduct.Controls.Add(this.labelControl3);
-            this.groupProduct.Controls.Add(this.textEdit1);
+            this.groupProduct.Controls.Add(this.txtSurname);
             this.groupProduct.Controls.Add(this.btnClear);
             this.groupProduct.Controls.Add(this.txtID);
             this.groupProduct.Controls.Add(this.lblProductID);
@@ -386,7 +387,7 @@
             this.groupProduct.Controls.Add(this.btnDelete);
             this.groupProduct.Controls.Add(this.btnSave);
             this.groupProduct.Controls.Add(this.lblProductMark);
-            this.groupProduct.Controls.Add(this.txtProductName);
+            this.groupProduct.Controls.Add(this.txtName);
             this.groupProduct.Controls.Add(this.lblProductName);
             this.groupProduct.Location = new System.Drawing.Point(1464, 2);
             this.groupProduct.Name = "groupProduct";
@@ -394,24 +395,24 @@
             this.groupProduct.TabIndex = 16;
             this.groupProduct.Text = "PERSONEL İŞLEMLERİ";
             // 
-            // lookUpEdit1
+            // cmbDeparment
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(106, 131);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cmbDeparment.Location = new System.Drawing.Point(106, 131);
+            this.cmbDeparment.Name = "cmbDeparment";
+            this.cmbDeparment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Size = new System.Drawing.Size(294, 20);
-            this.lookUpEdit1.TabIndex = 32;
+            this.cmbDeparment.Size = new System.Drawing.Size(294, 20);
+            this.cmbDeparment.TabIndex = 32;
             // 
-            // textEdit5
+            // txtPhone
             // 
-            this.textEdit5.Location = new System.Drawing.Point(106, 209);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.textEdit5.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.textEdit5.Properties.MaskSettings.Set("mask", "(000) 000-0000");
-            this.textEdit5.Size = new System.Drawing.Size(292, 20);
-            this.textEdit5.TabIndex = 31;
+            this.txtPhone.Location = new System.Drawing.Point(106, 209);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.txtPhone.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            this.txtPhone.Properties.MaskSettings.Set("mask", "(000) 000-0000");
+            this.txtPhone.Size = new System.Drawing.Size(292, 20);
+            this.txtPhone.TabIndex = 31;
             // 
             // labelControl4
             // 
@@ -421,12 +422,12 @@
             this.labelControl4.TabIndex = 30;
             this.labelControl4.Text = "TELEFON:";
             // 
-            // textEdit2
+            // txtMail
             // 
-            this.textEdit2.Location = new System.Drawing.Point(107, 183);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(292, 20);
-            this.textEdit2.TabIndex = 29;
+            this.txtMail.Location = new System.Drawing.Point(107, 183);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(292, 20);
+            this.txtMail.TabIndex = 29;
             // 
             // labelControl1
             // 
@@ -444,12 +445,12 @@
             this.labelControl2.TabIndex = 26;
             this.labelControl2.Text = "E-POSTA:";
             // 
-            // textEdit4
+            // txtPhoto
             // 
-            this.textEdit4.Location = new System.Drawing.Point(106, 157);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(292, 20);
-            this.textEdit4.TabIndex = 25;
+            this.txtPhoto.Location = new System.Drawing.Point(106, 157);
+            this.txtPhoto.Name = "txtPhoto";
+            this.txtPhoto.Size = new System.Drawing.Size(292, 20);
+            this.txtPhoto.TabIndex = 25;
             // 
             // labelControl3
             // 
@@ -459,12 +460,12 @@
             this.labelControl3.TabIndex = 24;
             this.labelControl3.Text = "FOTOĞRAF:";
             // 
-            // textEdit1
+            // txtSurname
             // 
-            this.textEdit1.Location = new System.Drawing.Point(107, 105);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(292, 20);
-            this.textEdit1.TabIndex = 23;
+            this.txtSurname.Location = new System.Drawing.Point(107, 105);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(292, 20);
+            this.txtSurname.TabIndex = 23;
             // 
             // txtID
             // 
@@ -727,7 +728,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProductName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
@@ -737,11 +738,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupProduct)).EndInit();
             this.groupProduct.ResumeLayout(false);
             this.groupProduct.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbDeparment.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhoto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSurname.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -758,7 +759,7 @@
         private DevExpress.XtraEditors.LabelControl lblProductName;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.LabelControl lblProductMark;
-        private DevExpress.XtraEditors.TextEdit txtProductName;
+        private DevExpress.XtraEditors.TextEdit txtName;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.GridControl gridList;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
@@ -766,14 +767,14 @@
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.GroupControl groupProduct;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit txtPhone;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtMail;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit txtPhoto;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtSurname;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl lblProductID;
         private DevExpress.XtraEditors.SimpleButton btnList;
@@ -809,6 +810,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.LabelControl labelControl16;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.LookUpEdit cmbDeparment;
     }
 }

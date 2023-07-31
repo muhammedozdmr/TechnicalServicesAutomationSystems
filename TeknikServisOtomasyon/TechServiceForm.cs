@@ -135,5 +135,33 @@ namespace TeknikServisOtomasyon
         {
             System.Diagnostics.Process.Start("excel");
         }
+
+        private void barYouTube_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormYoutube formYoutube = new Formlar.FormYoutube();
+            formYoutube.MdiParent = this;
+            formYoutube.Show();
+        }
+
+        private void barAjanda_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormNotes formNotes = new Formlar.FormNotes();
+            formNotes.MdiParent = this;
+            formNotes.Show();
+        }
+
+        private void barBrokenProductList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormArizaListesi formAriza= new Formlar.FormArizaListesi();
+            formAriza.MdiParent = this;
+            formAriza.Show();
+        }
+
+        private void barNewProductSale_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormProductSale formSale = new Formlar.FormProductSale();
+            //formSale.MdiParent = this;
+            formSale.Show();
+        }
     }
 }

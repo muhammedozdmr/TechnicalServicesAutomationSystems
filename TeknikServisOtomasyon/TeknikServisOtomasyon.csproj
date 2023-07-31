@@ -84,6 +84,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formlar\FormArizaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormArizaListesi.Designer.cs">
+      <DependentUpon>FormArizaListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FormBrand.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,11 +156,35 @@
     <Compile Include="Formlar\FormEmployee.Designer.cs">
       <DependentUpon>FormEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FormNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormNotes.Designer.cs">
+      <DependentUpon>FormNotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FormProductList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\FormProductList.Designer.cs">
       <DependentUpon>FormProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FormProductSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormProductSale.Designer.cs">
+      <DependentUpon>FormProductSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FormSellList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormSellList.Designer.cs">
+      <DependentUpon>FormSellList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FormYoutube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormYoutube.Designer.cs">
+      <DependentUpon>FormYoutube.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\ForrmStatistics.cs">
       <SubType>Form</SubType>
@@ -230,6 +260,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formlar\FormArizaListesi.resx">
+      <DependentUpon>FormArizaListesi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormBrand.resx">
       <DependentUpon>FormBrand.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,11 +296,26 @@
     <EmbeddedResource Include="Formlar\FormEmployee.resx">
       <DependentUpon>FormEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormNotes.resx">
+      <DependentUpon>FormNotes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormProductList.resx">
       <DependentUpon>FormProductList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormProductSale.resx">
+      <DependentUpon>FormProductSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormSellList.resx">
+      <DependentUpon>FormSellList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormYoutube.resx">
+      <DependentUpon>FormYoutube.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\ForrmStatistics.resx">
       <DependentUpon>ForrmStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechServiceForm.aa.resx">
+      <DependentUpon>TechServiceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TechServiceForm.resx">
       <DependentUpon>TechServiceForm.cs</DependentUpon>

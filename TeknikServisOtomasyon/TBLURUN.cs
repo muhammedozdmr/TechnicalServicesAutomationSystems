@@ -18,7 +18,6 @@ namespace TeknikServisOtomasyon
         public TBLURUN()
         {
             this.TBLURUNHAREKETs = new HashSet<TBLURUNHAREKET>();
-            this.TBLURUNKABULs = new HashSet<TBLURUNKABUL>();
             this.TBLURUNTAKIPs = new HashSet<TBLURUNTAKIP>();
         }
     
@@ -34,8 +33,6 @@ namespace TeknikServisOtomasyon
         public virtual TBLKATEGORI TBLKATEGORI { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLURUNHAREKET> TBLURUNHAREKETs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLURUNKABUL> TBLURUNKABULs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLURUNTAKIP> TBLURUNTAKIPs { get; set; }
     }

@@ -145,17 +145,18 @@
           <Property Name="TARIH" Type="smalldatetime" />
           <Property Name="ADET" Type="smallint" />
           <Property Name="FIYAT" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="URUNSERINO" Type="char" MaxLength="10" />
         </EntityType>
         <EntityType Name="TBLURUNKABUL">
           <Key>
             <PropertyRef Name="ISLEMID" />
           </Key>
           <Property Name="ISLEMID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="URUN" Type="int" />
           <Property Name="CARI" Type="int" />
           <Property Name="PERSONEL" Type="smallint" />
           <Property Name="GELISTARIHI" Type="smalldatetime" />
           <Property Name="CIKISTARIHI" Type="smalldatetime" />
+          <Property Name="URUNSERINO" Type="char" MaxLength="10" />
         </EntityType>
         <EntityType Name="TBLURUNTAKIP">
           <Key>
@@ -287,18 +288,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_TBLURUNKABUL_TBLURUN">
-          <End Role="TBLURUN" Type="Self.TBLURUN" Multiplicity="0..1" />
-          <End Role="TBLURUNKABUL" Type="Self.TBLURUNKABUL" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="TBLURUN">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="TBLURUNKABUL">
-              <PropertyRef Name="URUN" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_TBLURUNTAKIP_TBLURUN">
           <End Role="TBLURUN" Type="Self.TBLURUN" Multiplicity="0..1" />
           <End Role="TBLURUNTAKIP" Type="Self.TBLURUNTAKIP" Multiplicity="*" />
@@ -396,10 +385,6 @@
           </AssociationSet>
           <AssociationSet Name="FK_TBLURUNKABUL_TBLPERSONEL" Association="Self.FK_TBLURUNKABUL_TBLPERSONEL">
             <End Role="TBLPERSONEL" EntitySet="TBLPERSONEL" />
-            <End Role="TBLURUNKABUL" EntitySet="TBLURUNKABUL" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TBLURUNKABUL_TBLURUN" Association="Self.FK_TBLURUNKABUL_TBLURUN">
-            <End Role="TBLURUN" EntitySet="TBLURUN" />
             <End Role="TBLURUNKABUL" EntitySet="TBLURUNKABUL" />
           </AssociationSet>
           <AssociationSet Name="FK_TBLURUNTAKIP_TBLURUN" Association="Self.FK_TBLURUNTAKIP_TBLURUN">
@@ -554,7 +539,6 @@
           <Property Name="DURUM" Type="Boolean" />
           <NavigationProperty Name="TBLKATEGORI" Relationship="Self.FK_TBLURUN_TBLKATEGORI" FromRole="TBLURUN" ToRole="TBLKATEGORI" />
           <NavigationProperty Name="TBLURUNHAREKETs" Relationship="Self.FK_TBLURUNHAREKET_TBLURUN" FromRole="TBLURUN" ToRole="TBLURUNHAREKET" />
-          <NavigationProperty Name="TBLURUNKABULs" Relationship="Self.FK_TBLURUNKABUL_TBLURUN" FromRole="TBLURUN" ToRole="TBLURUNKABUL" />
           <NavigationProperty Name="TBLURUNTAKIPs" Relationship="Self.FK_TBLURUNTAKIP_TBLURUN" FromRole="TBLURUN" ToRole="TBLURUNTAKIP" />
         </EntityType>
         <EntityType Name="TBLURUNHAREKET">
@@ -571,20 +555,20 @@
           <NavigationProperty Name="TBLCARI" Relationship="Self.FK_TBLURUNHAREKET_TBLCARI" FromRole="TBLURUNHAREKET" ToRole="TBLCARI" />
           <NavigationProperty Name="TBLPERSONEL" Relationship="Self.FK_TBLURUNHAREKET_TBLPERSONEL" FromRole="TBLURUNHAREKET" ToRole="TBLPERSONEL" />
           <NavigationProperty Name="TBLURUN" Relationship="Self.FK_TBLURUNHAREKET_TBLURUN" FromRole="TBLURUNHAREKET" ToRole="TBLURUN" />
+          <Property Name="URUNSERINO" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="TBLURUNKABUL">
           <Key>
             <PropertyRef Name="ISLEMID" />
           </Key>
           <Property Name="ISLEMID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="URUN" Type="Int32" />
           <Property Name="CARI" Type="Int32" />
           <Property Name="PERSONEL" Type="Int16" />
           <Property Name="GELISTARIHI" Type="DateTime" Precision="0" />
           <Property Name="CIKISTARIHI" Type="DateTime" Precision="0" />
           <NavigationProperty Name="TBLCARI" Relationship="Self.FK_TBLURUNKABUL_TBLCARI" FromRole="TBLURUNKABUL" ToRole="TBLCARI" />
           <NavigationProperty Name="TBLPERSONEL" Relationship="Self.FK_TBLURUNKABUL_TBLPERSONEL" FromRole="TBLURUNKABUL" ToRole="TBLPERSONEL" />
-          <NavigationProperty Name="TBLURUN" Relationship="Self.FK_TBLURUNKABUL_TBLURUN" FromRole="TBLURUNKABUL" ToRole="TBLURUN" />
+          <Property Name="URUNSERINO" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="TBLURUNTAKIP">
           <Key>
@@ -717,18 +701,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_TBLURUNKABUL_TBLURUN">
-          <End Role="TBLURUN" Type="Self.TBLURUN" Multiplicity="0..1" />
-          <End Role="TBLURUNKABUL" Type="Self.TBLURUNKABUL" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="TBLURUN">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="TBLURUNKABUL">
-              <PropertyRef Name="URUN" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_TBLURUNTAKIP_TBLURUN">
           <End Role="TBLURUN" Type="Self.TBLURUN" Multiplicity="0..1" />
           <End Role="TBLURUNTAKIP" Type="Self.TBLURUNTAKIP" Multiplicity="*" />
@@ -796,10 +768,6 @@
           <AssociationSet Name="FK_TBLURUNHAREKET_TBLURUN" Association="Self.FK_TBLURUNHAREKET_TBLURUN">
             <End Role="TBLURUN" EntitySet="TBLURUNs" />
             <End Role="TBLURUNHAREKET" EntitySet="TBLURUNHAREKETs" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TBLURUNKABUL_TBLURUN" Association="Self.FK_TBLURUNKABUL_TBLURUN">
-            <End Role="TBLURUN" EntitySet="TBLURUNs" />
-            <End Role="TBLURUNKABUL" EntitySet="TBLURUNKABULs" />
           </AssociationSet>
           <AssociationSet Name="FK_TBLURUNTAKIP_TBLURUN" Association="Self.FK_TBLURUNTAKIP_TBLURUN">
             <End Role="TBLURUN" EntitySet="TBLURUNs" />
@@ -986,6 +954,7 @@
           <EntitySetMapping Name="TBLURUNHAREKETs">
             <EntityTypeMapping TypeName="DbTeknikServisModel.TBLURUNHAREKET">
               <MappingFragment StoreEntitySet="TBLURUNHAREKET">
+                <ScalarProperty Name="URUNSERINO" ColumnName="URUNSERINO" />
                 <ScalarProperty Name="HAREKETID" ColumnName="HAREKETID" />
                 <ScalarProperty Name="URUN" ColumnName="URUN" />
                 <ScalarProperty Name="MUSTERI" ColumnName="MUSTERI" />
@@ -999,8 +968,8 @@
           <EntitySetMapping Name="TBLURUNKABULs">
             <EntityTypeMapping TypeName="DbTeknikServisModel.TBLURUNKABUL">
               <MappingFragment StoreEntitySet="TBLURUNKABUL">
+                <ScalarProperty Name="URUNSERINO" ColumnName="URUNSERINO" />
                 <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
-                <ScalarProperty Name="URUN" ColumnName="URUN" />
                 <ScalarProperty Name="CARI" ColumnName="CARI" />
                 <ScalarProperty Name="PERSONEL" ColumnName="PERSONEL" />
                 <ScalarProperty Name="GELISTARIHI" ColumnName="GELISTARIHI" />

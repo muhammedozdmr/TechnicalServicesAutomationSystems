@@ -117,8 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="barProductList.Caption" xml:space="preserve">
-    <value>Ürün Listesi</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ribbonControl1.ExpandCollapseItem.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="ribbonControl1.ExpandCollapseItem.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ribbonControl1.ExpandCollapseItem.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ribbonControl1.ExpandCollapseItem.SearchTags" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="barProductList.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -135,6 +146,9 @@
         Q0xVH7l31z/iVuMtequrLr+FHjxEdWrZUs/f85SpZY9rm28SiL9O/FcMDug3kAaJ1raEFD4AAAAASUVO
         RK5CYII=
 </value>
+  </data>
+  <data name="barProductList.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barProductList.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -163,8 +177,11 @@
         QZP0deQFBP2m4r6g5/9Ngt5cT4LeXE+C3lw/QPI3hVO1ld2PH20AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barNewProduct.Caption" xml:space="preserve">
-    <value>Yeni Ürün</value>
+  <data name="barProductList.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barProductList.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barNewProduct.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -185,6 +202,9 @@
         Cp7NMzFw/x7J/2FWRBDmya6M8LLULTdbKKGx4XZGi1fO5MwnzQddZhQ2FHYUi+fug/wBGUEqEeczMV4A
         AAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="barNewProduct.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barNewProduct.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -231,8 +251,11 @@
         QmCC
 </value>
   </data>
-  <data name="barSearchProduct.Caption" xml:space="preserve">
-    <value>Ürün Ara</value>
+  <data name="barNewProduct.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barNewProduct.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barSearchProduct.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -252,6 +275,9 @@
         K+DkHcoTn4iohjfheFgVjoVXwYuMXqGVYCQ3Iy6/DREMf7QmnwEk91B89SAt7t4K0NfTmeBO2LUDj008
         CfsY+925UYc8EXx4D1mBjfsvyDJTeKZdoPkAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="barSearchProduct.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barSearchProduct.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -300,8 +326,11 @@
         R+ZN0wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barProductStatistics.Caption" xml:space="preserve">
-    <value>Ürün İstatistikleri</value>
+  <data name="barSearchProduct.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barSearchProduct.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barProductStatistics.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -322,6 +351,9 @@
         9Cvku1Y2c2EBQbReuFQbEyqpgOJvMl5WwER8KXNzAn5OKloUpJX/GOSuFIegfM9K9/VdwdqLvwXGsby3
         zsdjuUOOhscT4pBf/QZLUGZRfqDMoyygzPf6LO7jMVeRrygWBpH/AcxTUm8ObXlCAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="barProductStatistics.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barProductStatistics.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -373,8 +405,11 @@
         S/99iI4InhHumKeUJY/DbXyN73l0/8+EJP0bJoL2XOFHg5wAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barMarkStatistics.Caption" xml:space="preserve">
-    <value>Marka İstatistikleri</value>
+  <data name="barProductStatistics.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barProductStatistics.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barMarkStatistics.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -392,6 +427,9 @@
         Z3D3ZnxIFGKAv8ls0Jni97Tr9AYoE33VTMEtrtBHfaxoJWLyvYndd+UoNfyCLgRlKTUML+8LXK/R7PRF
         b8A6YvYanZhwsWR6ffRceZbMXu0SJpGrOXPs/wClHLTK8l5xfgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barMarkStatistics.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barMarkStatistics.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -435,8 +473,11 @@
         cAP05/cDWv8FWBFpvAme5xYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barBrokenProductList.Caption" xml:space="preserve">
-    <value>Arızalı Ürün Listesi</value>
+  <data name="barMarkStatistics.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barMarkStatistics.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barBrokenProductList.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -456,6 +497,9 @@
         kKq274mvj95nLY3cUbdXJt9WHBGlU0REWdM2bD1N+YUZrAcFO5mUkBPshGzP1jBCJpFIgv4CH0WJr0yI
         A7cAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="barBrokenProductList.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barBrokenProductList.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -498,8 +542,11 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barNewBrokenProduct.Caption" xml:space="preserve">
-    <value>Yeni Arızalı Ürün Kaydı</value>
+  <data name="barBrokenProductList.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barBrokenProductList.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barNewBrokenProduct.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -521,6 +568,9 @@
         dheycaszWW+7m6zd5ETWbNjFUgxiuWbdZj+bDdu1ew9f1No7HjlHCDH/B1yyQnrYHYdJAAAAAElFTkSu
         QmCC
 </value>
+  </data>
+  <data name="barNewBrokenProduct.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barNewBrokenProduct.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -569,8 +619,11 @@
         EyzOS/7SC4Wt/B8Gm+BW4yWx1gxnhu/RsxEj/gefwKuyLiJ0lAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barBrokenProductInfo.Caption" xml:space="preserve">
-    <value>Arızalı Ürün Açıklaması</value>
+  <data name="barNewBrokenProduct.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barNewBrokenProduct.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barBrokenProductInfo.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -590,6 +643,9 @@
         bgsduJjazghVEyuoUuwhmTFAOrdF5gb48u8QatZxNlEUMnAsIr5Rff5mG7MhMrkV55JaGfkPEawWnGGJ
         cDqmTvMbn9HlUR5S63QAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="barBrokenProductInfo.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barBrokenProductInfo.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -629,8 +685,11 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barCreateQR.Caption" xml:space="preserve">
-    <value>QR Code Oluştur</value>
+  <data name="barBrokenProductInfo.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barBrokenProductInfo.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCreateQR.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1024,8 +1083,14 @@
         OsToC2+qtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barCreateBarcode.Caption" xml:space="preserve">
-    <value>Barkod Oluştur</value>
+  <data name="barCreateQR.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCreateQR.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCreateQR.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCreateBarcode.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1042,6 +1107,9 @@
         HCcuDQir4GI/jqUw19tQw1BDTZ0VR2tthBVHzj51kSCXEI98YnMWbEnB+zwi56+/aPZA+gVHtaNfg4EG
         bQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barCreateBarcode.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCreateBarcode.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1075,8 +1143,11 @@
         1/+W8+uEXymtv1weBCR4GHCu82XEX+tvtkeFx/11LD7/ALaDK+SN9fBNAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barCategoryList.Caption" xml:space="preserve">
-    <value>Kategori Listesi</value>
+  <data name="barCreateBarcode.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCreateBarcode.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCategoryList.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1093,6 +1164,9 @@
         UlIsG6iQ4YYCG4mMxNQyrAuMTS/GTdZXkLQOyxf1eeokQ6iz6FyxvNRpHoKh0RcgQTlBh4FNm9n/H1Cz
         KPsD0Ff61Zq9OVsAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="barCategoryList.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCategoryList.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1127,8 +1201,11 @@
         gbjDA968SgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barNewCategory.Caption" xml:space="preserve">
-    <value>Yeni Kategori</value>
+  <data name="barCategoryList.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCategoryList.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barNewCategory.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1150,6 +1227,9 @@
         N6xIrR0hcATJf1ixl3rrD1UGVu3ITSH/GxIjSKy4iFchkaToFeuT163eXXBNlqDtlsl1Ikn4cE+pZVXc
         5atvx36zhjzLSBESLITB/QMgLpTXht/PJgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barNewCategory.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barNewCategory.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1201,8 +1281,11 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="barNewCustomer.Caption" xml:space="preserve">
-    <value>Yeni Cari</value>
+  <data name="barNewCategory.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barNewCategory.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barNewCustomer.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1223,6 +1306,9 @@
         XYfnoEVjj/uxM2CQC0G9QgbgpfkIfXUK0dkcTlSTw1m35ylFyFWIYFAIkeMnhN5vMrJlk3Bq7cTOtDWC
         Ou0qwfloNysV9Y4cYeT2RxcTqCZRMbKIynpUNqMzi7G2BVR8QojFLxErpYC5aZnAAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="barNewCustomer.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barNewCustomer.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1273,8 +1359,11 @@
         5UGCYf4ArM8KCJqLfeQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barCustomerList.Caption" xml:space="preserve">
-    <value>Cari Listesi</value>
+  <data name="barNewCustomer.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barNewCustomer.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCustomerList.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1296,6 +1385,9 @@
         Fure4aI6+aVrVjnnt/I17G9LJexykp32IgAziggiZiDMymYScZ4Rm4i5Z/xJTwAW6n/JVs2+J4BuRwAA
         AABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barCustomerList.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCustomerList.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1345,8 +1437,11 @@
         f+W98Zcni/EHAp4JBeja5VYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barCustomerCityStatistics.Caption" xml:space="preserve">
-    <value>Cari İl İstatistiği</value>
+  <data name="barCustomerList.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCustomerList.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCustomerCityStatistics.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1358,6 +1453,9 @@
         5G/4D8MgPlYD8GGSDTgmKPofiv+B+CQbcJaH5z8Mg/gj0QD0QCQqHZCP/zMAAIMBkElfkvW8AAAAAElF
         TkSuQmCC
 </value>
+  </data>
+  <data name="barCustomerCityStatistics.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCustomerCityStatistics.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1402,8 +1500,11 @@
         rkJggg==
 </value>
   </data>
-  <data name="barCustomerActions.Caption" xml:space="preserve">
-    <value>Cari Hareketleri</value>
+  <data name="barCustomerCityStatistics.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCustomerCityStatistics.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCustomerActions.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1421,6 +1522,9 @@
         1z194RmE/HIDfzgs2UmWWSGL9kSRK0SwGOevkxHgDk+VkkBumX7Vw2GN5A1dJDEZ1ic3OWUNZwfllPRD
         yC7uM2Qr+pCl0CGTyDirRUaRFumFvUscL3jMOZafQIOjZxgaw3/9f1zqmQmXBAAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barCustomerActions.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCustomerActions.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1459,8 +1563,11 @@
         V66B9LmnOSkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barEmployeeActions.Caption" xml:space="preserve">
-    <value>Personel Hareketleri</value>
+  <data name="barCustomerActions.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCustomerActions.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barEmployeeActions.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1481,6 +1588,9 @@
         SRP09hP0nMvRTpFnxge/2EbjII5L5I1iCSckj0/Fp6sQd0GJ+LTniCNiU58jhpNShWgiikcpRakCUckK
         nCDCT96OJYMVhPjhTcH74X8s98jf8D6g/4B5/QYaYFKPSY8fuQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barEmployeeActions.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barEmployeeActions.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1527,8 +1637,11 @@
         OiD5D4reaFGiEQGTAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barNewInvoice.Caption" xml:space="preserve">
-    <value>Yeni Fatura Girişi</value>
+  <data name="barEmployeeActions.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barEmployeeActions.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barNewInvoice.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1541,6 +1654,9 @@
         Sp8OH203W5mAHM9YMFe/SE76/du1Qo5nKqjMrp4nf9dOz7dCjoefLyhP106OZpZbMgo8/HxBSakqY8q4
         MmGAfXK8oY+pyKZSVioKUh72yfEGn7MU/gA6iZzWHHulbQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barNewInvoice.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barNewInvoice.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1559,8 +1675,11 @@
         HcJOJXDhxP3Xd8MBFgiDQkmgQANcOHFv/Xb8/zHRH6LrWslOUZ99AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barNewInvoiceSection.Caption" xml:space="preserve">
-    <value>Fatura Kalem Girişi</value>
+  <data name="barNewInvoice.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barNewInvoice.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barNewInvoiceSection.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1575,6 +1694,9 @@
         bHBpzJDNzVaEbkJEcwhwhkf9wC42WxG64dsCDrEBlh2AD47fPx7cAgngNuAFkoDTHHAHJIMUcBekgnsg
         DdwHD0AGyARZIBvI5gAJqMAF+BfMBfmgCJSAUlAGykElcIMaIhJ/AZRc0ebl2pbXAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="barNewInvoiceSection.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barNewInvoiceSection.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1606,8 +1728,11 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="barSearchInvoiceDetails.Caption" xml:space="preserve">
-    <value>Detaylı Fatura Sorgulama</value>
+  <data name="barNewInvoiceSection.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barNewInvoiceSection.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barSearchInvoiceDetails.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1626,6 +1751,9 @@
         +KwawXdb4JxtBfcsj2Vyj6kXdwcsonLaoCD7Ty2QyXNLmCDy2IwaAbdfUxdYBBfCgf8FzNgZLzvDMt/T
         PzmE04LAtDcIuPUKvgkCg513o3vovkJzwhGCLcGOwNjBYGdDYPQbBSNIeU26Wl8AAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="barSearchInvoiceDetails.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barSearchInvoiceDetails.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1671,8 +1799,11 @@
         l8fBf7dZa9tg1H8BVZPwKK5OWY0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barConvertToPdf.Caption" xml:space="preserve">
-    <value>PDF Fatura</value>
+  <data name="barSearchInvoiceDetails.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barSearchInvoiceDetails.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barConvertToPdf.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1691,6 +1822,9 @@
         UJ6o0a3bAX0BvCKxS13b9P7a/S646fZGlfaNnu53EzuIQMLPK+Cj5Oe53E7s9IEv2kL4r/37FzB/AO2A
         e7eRmc9hAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="barConvertToPdf.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barConvertToPdf.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1736,8 +1870,11 @@
         hOCLdAC89B9Ga+pafuJrHwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barInactiveInvoice.Caption" xml:space="preserve">
-    <value>Pasif Faturalar</value>
+  <data name="barConvertToPdf.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barConvertToPdf.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barInactiveInvoice.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1755,6 +1892,9 @@
         i+BNcdwLTIBGGUZ67qrgTF6b/AM8xjhLDJ3CcLFA4+Mx+ijyXZ3KeWEITJlNPcezn+NY9jMcJUwXWmDK
         asGRzKfCofNPhIMZcZpx4Fwz9qU1WkiQQNDfxKY/7PhPaLOy4Td8LQGWx6676AAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barInactiveInvoice.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barInactiveInvoice.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1796,8 +1936,11 @@
         e8wXWtltAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barEmployeeList.Caption" xml:space="preserve">
-    <value>Personel Listesi</value>
+  <data name="barInactiveInvoice.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barInactiveInvoice.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barEmployeeList.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1816,6 +1959,9 @@
         uD0B2N2HwReKweUKoTHYoEg3QSrXQSLTkBn3L8nYYgsk5Ct3cuxOWLMZmMwW6A0msut6KFUZOChTQCyW
         kl8XgsvjgabpByQjjy2Inr+UED3n3B2cBNcOeTEwBDkhBQD1HxX+3ye8Xt6YAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="barEmployeeList.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barEmployeeList.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1861,8 +2007,11 @@
         MP/PqYksouD/jItgcod9K4Dzb5w7AZAgvbW/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barNewEmployee.Caption" xml:space="preserve">
-    <value>Yeni Personel</value>
+  <data name="barEmployeeList.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barEmployeeList.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barNewEmployee.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1880,6 +2029,9 @@
         9R9UmcNfPRKSNEKwkwUxJwy179TF4Rt20vgYmVce4fhlB47RqlLz7UjJbRAzJ2ttVNmGpAt12JduGqKs
         uEh8n+OI9QTvdSOxmeAT3kpsJ3hWrsYtJ0aeORw95xf290D1Cy/MeLbWSgQFAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="barNewEmployee.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barNewEmployee.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1915,8 +2067,11 @@
         oL8BzDrezU0cdxMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barDepartmantList.Caption" xml:space="preserve">
-    <value>Departman Listesi</value>
+  <data name="barNewEmployee.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barNewEmployee.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barDepartmantList.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1935,6 +2090,9 @@
         eFAdjj5lGBck9hCJHbT06ycZtOUzbJ17D74tEOy9iogIQkJEbX0FWxn2GUcTUoK9ASEA3j/NfQsRhjku
         JQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barDepartmantList.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barDepartmantList.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1980,8 +2138,11 @@
         QmCC
 </value>
   </data>
-  <data name="barNewDepartmant.Caption" xml:space="preserve">
-    <value>Yeni Departman</value>
+  <data name="barDepartmantList.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barDepartmantList.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barNewDepartmant.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2002,6 +2163,9 @@
         P2GXgIExyJUsH7Iup7vSyCIPkieSElwlGclUbzylcuTjf5s8CRpC+D8S8pXOyJRxiHWnB2kBlUy+RRNC
         CRICy4dVjhT1B3hg45dPadMbAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="barNewDepartmant.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barNewDepartmant.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2050,8 +2214,11 @@
         Mo2gQ5ClxGkN/D+QoPYNyjCHoEagDiHUZ/F/wv8lADB+B3eE88Zb5X+IAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barCalculator.Caption" xml:space="preserve">
-    <value>Hesap Makinesi</value>
+  <data name="barNewDepartmant.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barNewDepartmant.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCalculator.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2069,6 +2236,9 @@
         F2gej67VPplEbeMEHjROEhO43zBOTOAeVU29G5o6N+5SZepchBt3Hg6tk6CK4Ec1ca3M9X9A9tE5ceY3
         AxHXiQaZ7iQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="barCalculator.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCalculator.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2107,8 +2277,11 @@
         P5h3Av+G/a2VgxEj/gFuFY/JM67qFwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barCreateNewNote.Caption" xml:space="preserve">
-    <value>Yeni Not</value>
+  <data name="barCalculator.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCalculator.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCreateNewNote.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2127,6 +2300,9 @@
         N6cRqb6EGM0plCliNCWL8TbZB03XV6mJ8+6h3tp3wP5EF2Ir4UFsW8f2f9hhTVfCHoDNH86SXiJtqJBq
         AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="barCreateNewNote.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCreateNewNote.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2167,8 +2343,11 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barCurrency.Caption" xml:space="preserve">
-    <value>Döviz Kurları</value>
+  <data name="barCreateNewNote.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCreateNewNote.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCurrency.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2191,6 +2370,9 @@
         b7kdIPKECw2g32MZK2IVc18K40b4cZc33HRnhB93fhOWwlD5clb62IopyuF/1GFFjYjGMDUAAAAASUVO
         RK5CYII=
 </value>
+  </data>
+  <data name="barCurrency.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCurrency.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2241,8 +2423,11 @@
         zyXMoVOTE5nomPRXzwR0jv6PMd5KDKnpxPjeCfyJJhL5I/5ELNZ/ARYVvuKnEwoEAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barYouTube.Caption" xml:space="preserve">
-    <value>YouTube</value>
+  <data name="barCurrency.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCurrency.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barYouTube.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2260,6 +2445,9 @@
         Z+kc2jbzJ4OPcIG3Td2awAXaEpLRtonDbWZjElqZeGYHbvF+dTMuMXAmZouGFqyi6NfEmgjZQMUt4UUQ
         v4Rdx1Jsc1TEP+xfRAz/Hsh3kpsun6IP3xgAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="barYouTube.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barYouTube.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2297,8 +2485,11 @@
         HlD8A1V7aoClT4MrAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barCurrencyChange.Caption" xml:space="preserve">
-    <value>Döviz İşlemleri</value>
+  <data name="barYouTube.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barYouTube.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCurrencyChange.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2319,6 +2510,9 @@
         nrScYotLyJiBLHbyDkvwCs2YdGGJG8icMbuu2U7nF4rXLvXRJnAG94r8+wK8HGfAf31lBkLkTkS/s9Xc
         b06C7sT+p0gO1A++AraRs0uR4gAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barCurrencyChange.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCurrencyChange.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2360,8 +2554,11 @@
         t50u7K/oVYySYB+nKDo16Ur3bwwnvY5RIryY9Rfw9QTcHxcOclAl7kcyAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barWord.Caption" xml:space="preserve">
-    <value>Word</value>
+  <data name="barCurrencyChange.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCurrencyChange.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barWord.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2382,6 +2579,9 @@
         d7ckrbnxsHUrzE5UQVeqOzSoXGFXCFuLOYFT3T+sEOBjcWGZgnenXME+NchY+45ARo9xOlw6m/+xQoAW
         8dFoW/SaKJE+Y+d/wQmE/AKBDjr+l9XQfgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barWord.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barWord.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2432,8 +2632,11 @@
         iGhybVDNTE75f11TcQAA+xdDExjxXV3wpQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="barExcel.Caption" xml:space="preserve">
-    <value>Excel</value>
+  <data name="barWord.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barWord.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barExcel.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2451,6 +2654,9 @@
         4zlE7ufoeRuRe3QfNRmLbuPSrVcHlDn1IrG/ci9xhjhLnLMYsHHegt0HCLcpgOMvLlVmbi0MtN8AAAAA
         SUVORK5CYII=
 </value>
+  </data>
+  <data name="barExcel.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barExcel.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2494,8 +2700,11 @@
         5gfi7zm7378N/3+C2X8Bg3DBnOf3rOsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barHelp.Caption" xml:space="preserve">
-    <value>Yardım</value>
+  <data name="barExcel.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barExcel.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barHelp.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2512,6 +2721,9 @@
         fwUU44NIQQAhA9gMfBviDYKmvtX06n8rY5KVABQDBSIcEDIAFIigKBOAYhAbJAYHWA0gHf9nAACnUeeN
         5DPo0gAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barHelp.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barHelp.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2552,8 +2764,11 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="barContacts.Caption" xml:space="preserve">
-    <value>Rehber</value>
+  <data name="barHelp.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barHelp.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barContacts.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2576,6 +2791,9 @@
         PyPACP1DZYXB8HqcGrDNYMh5CWljNTODGBgyw81gdaIz6H+eLSHs5ZD8Xudj53tnG0roX9ueg31QMvcH
         AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="barContacts.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barContacts.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2624,8 +2842,11 @@
         Zk7MslhuSVz6Vs8/vR0PjPyMnzzzv7Sedx+eHfH7Ub2Hfzx5IPsvT4nGmvr1UGkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barMailBox.Caption" xml:space="preserve">
-    <value>E-Posta Kutusu</value>
+  <data name="barContacts.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barContacts.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barMailBox.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2645,6 +2866,9 @@
         mK4Nw7cnxzEtZWNKGgy9gocartsWgUNNkqdGdsYLsmRPNJAjqyebV09WqeO5o5aEa8mJ1HDcrDxMcNWQ
         nnUT6WdMf5Ttm+z4D2ie/A9g/Abe6w1DJkxpowAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barMailBox.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barMailBox.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2693,8 +2917,11 @@
         V5iWFYAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barNewMail.Caption" xml:space="preserve">
-    <value>Yeni E-Posta</value>
+  <data name="barMailBox.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barMailBox.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barNewMail.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2712,6 +2939,9 @@
         Fjklml1Zhe0WGrM/MoA/2zgSTxII3xh3MAI/bo63D5Co3YAfjX8D9h2z0oIGBPyxDAAAAABJRU5ErkJg
         gg==
 </value>
+  </data>
+  <data name="barNewMail.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barNewMail.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2752,8 +2982,11 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="barSendSMS.Caption" xml:space="preserve">
-    <value>SMS Gönder</value>
+  <data name="barNewMail.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barNewMail.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barSendSMS.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2768,6 +3001,9 @@
         kXGZsMpFSLI5kJBaAE/3gAZvZuzo6A0YzBb5KiI2A8RsscMUbdPg/Z3LV3T9/yB9AUORXO+bd6wLAAAA
         AElFTkSuQmCC
 </value>
+  </data>
+  <data name="barSendSMS.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barSendSMS.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2792,8 +3028,11 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="barCards.Caption" xml:space="preserve">
-    <value>Kartlar</value>
+  <data name="barSendSMS.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barSendSMS.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barCards.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2811,6 +3050,9 @@
         sQdRYyPWIKqJ2LoC8dgKRKTZ9R7cLMsXWZ8XSJwQ1EyiQMLh1k6+niSg/lFPQPKFY176odh5cpFcOuHy
         Ka4cw+ULDMB/APsJNQ7B8zzNfAgAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="barCards.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barCards.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2849,8 +3091,11 @@
         DdcxWoyx+vB1+TTjn/addr950F/HcPsGURMgwefzC6AAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barAjanda.Caption" xml:space="preserve">
-    <value>Ajanda</value>
+  <data name="barCards.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barCards.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="barAjanda.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2868,6 +3113,9 @@
         CZGYVerYz2Qw23Atq5sGdnF0WCQBWqUIVhsEixd6s56xBP28G54Qm97lDoiTW+SxGV3kQidiKLf/0uEm
         jcxpHbhKSaW0Q0K4lNg0SAK+BPI/03ehNS+7V2GPBzr7cRy3/g8l/5oAmDOKEAAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="barAjanda.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
   </data>
   <data name="barAjanda.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2911,637 +3159,10 @@
         LyAMut4SBqhSAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barNewProductSale.Caption" xml:space="preserve">
-    <value>Yeni Ürün Satışı</value>
-  </data>
-  <data name="barNewProductSale.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAfdEVYdFRpdGxlAEZyYWN0aW9uO0ZyYWN0aW9uO051
-        bWJlcjt3jNu2AAAC0ElEQVQ4T6WSa0hTYRjHD+E3CfrQN6lvKbl01txFyV284Lw0o+mmKWpKBgapIRKC
-        EBRdDUEC+yJqw67WCisDy23nnJE3xBtewAu6sLGxq7bpNs/b8wgeWB/60gt/zvu+z/P8eJ7/eSlCyH/p
-        cBMTiURqwuGwORQKmTmOM1F/LYhfxHgwGLRgzv7+fhMPwAK3x0M/7OjekKnKCCYJpRcoVDIICs7t7u5+
-        6+p+tZIq15LGlrtbcL7JA5AoVZUSRX4tkSpLyc7OjiVJUkihIB63t7c3ODg0Mi1V6bniy/Vel8tNR3UA
-        7Zndbjctz6shEoWebG9vW5LEBRiLBbhhcmqOlqsrwkp1eWB1dZ2BUTogFsMDQMexSK6+QsQKHfH7/TTc
-        HYPE9o1NG5uvvRYQy7UR1jrOALAfYkfRFx6A5szOL45l5FYT1MLi8iiO5fF4mfLaFq9QpuFeDwzOwdyf
-        If9Eoij3wFgegKYJUvOJQJRHBKl5BIwjTqeTaW599CtZpiEP2rvWAoGACaDi01CMigKgBziCz+ejPfA3
-        HA4H0/G0Z1WYXkTqG9rs6A/EOkG9MF4vmNoDXSt5AK5EkRr3cdDmpwHj0IwoQ8tpdHU+m+0n29f/fqys
-        ummruOKGr1B3/Xd335slyDNGAeAbC2SD9ccEm5ZVFj6fow8uLi2z0JExTVUSrLravDkzOzcmVuqJTKUL
-        wf1HHgA6AvO1r6ysWXM0tYGz6ZrIiImxgjcvYPZ3PYa3o8PfadPXYdP0GfBIXVTth3E+8AAobnA4nGxJ
-        ZaNXICngnvcPzEPxFyg+CSpBXwwvjQuVdbfcrbef2CYmp8bh3sID4OU11Te2bSWk5JA79zvXwdADx+NT
-        sil0/97jZ+sSeKFilKKUwAslaGxUB/gX8BLJ4MWleGEWhfJ6veaElGwO9uSUMJMcfJMzowH/WgAfcblc
-        jN1uZw+FZ7g3E0KoP1OLmfaJxuuiAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="barNewProductSale.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="barSaleList.Caption" xml:space="preserve">
-    <value>Satış Listesi</value>
-  </data>
-  <data name="barSaleList.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABd0RVh0VGl0
-        bGUATGVnZW5kO0NoYXJ0O0xpc3SwL5DUAAACP0lEQVQ4T42S70tTYRTHH+yH/fgzoojeRfRXBEVIUZBE
-        oBATl66kkOl0TVdb6mw5W1mYyYpIK2OShUskdZoJQfhiL4Y/XuXaXNa2u+3efTvnuduYStGFzz3nPvec
-        zz3P5RFe32zgwbM5bMXr+zeeweBHIUQZCebwtyvH0G07OfQOBkGCHYITvpbajQhba7F49SJiG2nEfhIy
-        KpIoPUdlVKBpOfQMzLBgp/A8nZHWkNmAlXvtWLh8XhazoKp+ALbu97jJuMZgJVigksDdP8WCXcLdPy0F
-        89XnMHvpLKYrK/QvxRUkFXUbvJ5Vc3A9/qQLuinRyBCN50fkWMwV/CjEErKqho6HkyzYLTr7JuVItc9X
-        YfAt48L90KbiIusKIgTnmawGR++ELnB6J6DSSFVPwmh5u4oK17diU2VNH5qcozA7/TA7KDr8UpLOaLD3
-        jLOgXNzyBOSeTnd8xUn7Ak7Y5mVRhASJVHYLqnynpFX5Y6Wgzf1BjhSJp4qNkXXOifzaGuVr+cjPKRJY
-        Ot+xYI9o7RpDmgQrd48j3HUMi5YjRYHeWGguiFJI0jS8HRLsFc13RqHQnkLtR7H86BS+NBzWi2MpnKn2
-        oMH2hngtuUb5d1rn7dywj+iCxtt+OdJn0yEEjQcxVXOAmvWv8Z5/l/wDznn9VzIrxSTYJ663jcgDkuCD
-        UlIsG6iQ4YYCG4mMxNQyrAuMTS/GTdZXkLQOyxf1eeokQ6iz6FyxvNRpHoKh0RcgQTlBh4FNm9n/H1Cz
-        KPsD0Ff61Zq9OVsAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="barSaleList.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        gbjDA968SgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <metadata name="ribbonMiniToolbar1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1938, 1068</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Teknik Servis Otomasyon</value>
-  </data>
-  <data name="&gt;&gt;barProductList.Name" xml:space="preserve">
-    <value>barProductList</value>
-  </data>
-  <data name="&gt;&gt;barProductList.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewProduct.Name" xml:space="preserve">
-    <value>barNewProduct</value>
-  </data>
-  <data name="&gt;&gt;barNewProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barSearchProduct.Name" xml:space="preserve">
-    <value>barSearchProduct</value>
-  </data>
-  <data name="&gt;&gt;barSearchProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barProductStatistics.Name" xml:space="preserve">
-    <value>barProductStatistics</value>
-  </data>
-  <data name="&gt;&gt;barProductStatistics.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barMarkStatistics.Name" xml:space="preserve">
-    <value>barMarkStatistics</value>
-  </data>
-  <data name="&gt;&gt;barMarkStatistics.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barBrokenProductList.Name" xml:space="preserve">
-    <value>barBrokenProductList</value>
-  </data>
-  <data name="&gt;&gt;barBrokenProductList.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewBrokenProduct.Name" xml:space="preserve">
-    <value>barNewBrokenProduct</value>
-  </data>
-  <data name="&gt;&gt;barNewBrokenProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barBrokenProductInfo.Name" xml:space="preserve">
-    <value>barBrokenProductInfo</value>
-  </data>
-  <data name="&gt;&gt;barBrokenProductInfo.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCreateQR.Name" xml:space="preserve">
-    <value>barCreateQR</value>
-  </data>
-  <data name="&gt;&gt;barCreateQR.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCreateBarcode.Name" xml:space="preserve">
-    <value>barCreateBarcode</value>
-  </data>
-  <data name="&gt;&gt;barCreateBarcode.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCategoryList.Name" xml:space="preserve">
-    <value>barCategoryList</value>
-  </data>
-  <data name="&gt;&gt;barCategoryList.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewCategory.Name" xml:space="preserve">
-    <value>barNewCategory</value>
-  </data>
-  <data name="&gt;&gt;barNewCategory.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewCustomer.Name" xml:space="preserve">
-    <value>barNewCustomer</value>
-  </data>
-  <data name="&gt;&gt;barNewCustomer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCustomerList.Name" xml:space="preserve">
-    <value>barCustomerList</value>
-  </data>
-  <data name="&gt;&gt;barCustomerList.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCustomerCityStatistics.Name" xml:space="preserve">
-    <value>barCustomerCityStatistics</value>
-  </data>
-  <data name="&gt;&gt;barCustomerCityStatistics.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCustomerActions.Name" xml:space="preserve">
-    <value>barCustomerActions</value>
-  </data>
-  <data name="&gt;&gt;barCustomerActions.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barEmployeeActions.Name" xml:space="preserve">
-    <value>barEmployeeActions</value>
-  </data>
-  <data name="&gt;&gt;barEmployeeActions.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewInvoice.Name" xml:space="preserve">
-    <value>barNewInvoice</value>
-  </data>
-  <data name="&gt;&gt;barNewInvoice.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewInvoiceSection.Name" xml:space="preserve">
-    <value>barNewInvoiceSection</value>
-  </data>
-  <data name="&gt;&gt;barNewInvoiceSection.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barSearchInvoiceDetails.Name" xml:space="preserve">
-    <value>barSearchInvoiceDetails</value>
-  </data>
-  <data name="&gt;&gt;barSearchInvoiceDetails.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barConvertToPdf.Name" xml:space="preserve">
-    <value>barConvertToPdf</value>
-  </data>
-  <data name="&gt;&gt;barConvertToPdf.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barInactiveInvoice.Name" xml:space="preserve">
-    <value>barInactiveInvoice</value>
-  </data>
-  <data name="&gt;&gt;barInactiveInvoice.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barEmployeeList.Name" xml:space="preserve">
-    <value>barEmployeeList</value>
-  </data>
-  <data name="&gt;&gt;barEmployeeList.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewEmployee.Name" xml:space="preserve">
-    <value>barNewEmployee</value>
-  </data>
-  <data name="&gt;&gt;barNewEmployee.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barDepartmantList.Name" xml:space="preserve">
-    <value>barDepartmantList</value>
-  </data>
-  <data name="&gt;&gt;barDepartmantList.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewDepartmant.Name" xml:space="preserve">
-    <value>barNewDepartmant</value>
-  </data>
-  <data name="&gt;&gt;barNewDepartmant.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCalculator.Name" xml:space="preserve">
-    <value>barCalculator</value>
-  </data>
-  <data name="&gt;&gt;barCalculator.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCreateNewNote.Name" xml:space="preserve">
-    <value>barCreateNewNote</value>
-  </data>
-  <data name="&gt;&gt;barCreateNewNote.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCurrency.Name" xml:space="preserve">
-    <value>barCurrency</value>
-  </data>
-  <data name="&gt;&gt;barCurrency.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barYouTube.Name" xml:space="preserve">
-    <value>barYouTube</value>
-  </data>
-  <data name="&gt;&gt;barYouTube.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCurrencyChange.Name" xml:space="preserve">
-    <value>barCurrencyChange</value>
-  </data>
-  <data name="&gt;&gt;barCurrencyChange.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barWord.Name" xml:space="preserve">
-    <value>barWord</value>
-  </data>
-  <data name="&gt;&gt;barWord.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barExcel.Name" xml:space="preserve">
-    <value>barExcel</value>
-  </data>
-  <data name="&gt;&gt;barExcel.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barHelp.Name" xml:space="preserve">
-    <value>barHelp</value>
-  </data>
-  <data name="&gt;&gt;barHelp.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barContacts.Name" xml:space="preserve">
-    <value>barContacts</value>
-  </data>
-  <data name="&gt;&gt;barContacts.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barMailBox.Name" xml:space="preserve">
-    <value>barMailBox</value>
-  </data>
-  <data name="&gt;&gt;barMailBox.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewMail.Name" xml:space="preserve">
-    <value>barNewMail</value>
-  </data>
-  <data name="&gt;&gt;barNewMail.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barSendSMS.Name" xml:space="preserve">
-    <value>barSendSMS</value>
-  </data>
-  <data name="&gt;&gt;barSendSMS.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barCards.Name" xml:space="preserve">
-    <value>barCards</value>
-  </data>
-  <data name="&gt;&gt;barCards.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barAjanda.Name" xml:space="preserve">
-    <value>barAjanda</value>
-  </data>
-  <data name="&gt;&gt;barAjanda.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barNewProductSale.Name" xml:space="preserve">
-    <value>barNewProductSale</value>
-  </data>
-  <data name="&gt;&gt;barNewProductSale.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barSaleList.Name" xml:space="preserve">
-    <value>barSaleList</value>
-  </data>
-  <data name="&gt;&gt;barSaleList.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonMiniToolbar1.Name" xml:space="preserve">
-    <value>ribbonMiniToolbar1</value>
-  </data>
-  <data name="&gt;&gt;ribbonMiniToolbar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonMiniToolbar, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbnHomePage.Name" xml:space="preserve">
-    <value>rbnHomePage</value>
-  </data>
-  <data name="&gt;&gt;rbnHomePage.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbnProducts.Name" xml:space="preserve">
-    <value>rbnProducts</value>
-  </data>
-  <data name="&gt;&gt;rbnProducts.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Name" xml:space="preserve">
-    <value>ribbonPageGroup2</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup11.Name" xml:space="preserve">
-    <value>ribbonPageGroup11</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup11.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup12.Name" xml:space="preserve">
-    <value>ribbonPageGroup12</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup12.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup13.Name" xml:space="preserve">
-    <value>ribbonPageGroup13</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup13.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup14.Name" xml:space="preserve">
-    <value>ribbonPageGroup14</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup14.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbnCustomers.Name" xml:space="preserve">
-    <value>rbnCustomers</value>
-  </data>
-  <data name="&gt;&gt;rbnCustomers.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup3.Name" xml:space="preserve">
-    <value>ribbonPageGroup3</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup9.Name" xml:space="preserve">
-    <value>ribbonPageGroup9</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup9.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbnInvoice.Name" xml:space="preserve">
-    <value>rbnInvoice</value>
-  </data>
-  <data name="&gt;&gt;rbnInvoice.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup4.Name" xml:space="preserve">
-    <value>ribbonPageGroup4</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup1.Name" xml:space="preserve">
-    <value>ribbonPageGroup1</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbnEmployee.Name" xml:space="preserve">
-    <value>rbnEmployee</value>
-  </data>
-  <data name="&gt;&gt;rbnEmployee.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup5.Name" xml:space="preserve">
-    <value>ribbonPageGroup5</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup5.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup15.Name" xml:space="preserve">
-    <value>ribbonPageGroup15</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup15.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbnTools.Name" xml:space="preserve">
-    <value>rbnTools</value>
-  </data>
-  <data name="&gt;&gt;rbnTools.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup6.Name" xml:space="preserve">
-    <value>ribbonPageGroup6</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbnReports.Name" xml:space="preserve">
-    <value>rbnReports</value>
-  </data>
-  <data name="&gt;&gt;rbnReports.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup7.Name" xml:space="preserve">
-    <value>ribbonPageGroup7</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup7.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbnStatics.Name" xml:space="preserve">
-    <value>rbnStatics</value>
-  </data>
-  <data name="&gt;&gt;rbnStatics.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup10.Name" xml:space="preserve">
-    <value>ribbonPageGroup10</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup10.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbnContact.Name" xml:space="preserve">
-    <value>rbnContact</value>
-  </data>
-  <data name="&gt;&gt;rbnContact.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup16.Name" xml:space="preserve">
-    <value>ribbonPageGroup16</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup16.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TeknikServisForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="rbnHomePage.Text" xml:space="preserve">
-    <value>Ana Sayfa</value>
-  </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>ribbonPageGroup2</value>
-  </data>
-  <data name="ribbonPageGroup11.Text" xml:space="preserve">
-    <value>ribbonPageGroup11</value>
-  </data>
-  <data name="ribbonPageGroup12.Text" xml:space="preserve">
-    <value>ribbonPageGroup12</value>
-  </data>
-  <data name="ribbonPageGroup13.Text" xml:space="preserve">
-    <value>ribbonPageGroup13</value>
-  </data>
-  <data name="ribbonPageGroup14.Text" xml:space="preserve">
-    <value>ribbonPageGroup14</value>
-  </data>
-  <data name="rbnProducts.Text" xml:space="preserve">
-    <value>Ürünler</value>
-  </data>
-  <data name="ribbonPageGroup3.Text" xml:space="preserve">
-    <value>ribbonPageGroup3</value>
-  </data>
-  <data name="ribbonPageGroup9.Text" xml:space="preserve">
-    <value>ribbonPageGroup9</value>
-  </data>
-  <data name="rbnCustomers.Text" xml:space="preserve">
-    <value>Cariler</value>
-  </data>
-  <data name="ribbonPageGroup4.Text" xml:space="preserve">
-    <value>ribbonPageGroup4</value>
-  </data>
-  <data name="ribbonPageGroup1.Text" xml:space="preserve">
-    <value>ribbonPageGroup1</value>
-  </data>
-  <data name="rbnInvoice.Text" xml:space="preserve">
-    <value>Faturalar ve Hareketler</value>
-  </data>
-  <data name="ribbonPageGroup5.Text" xml:space="preserve">
-    <value>ribbonPageGroup5</value>
-  </data>
-  <data name="ribbonPageGroup15.Text" xml:space="preserve">
-    <value>ribbonPageGroup15</value>
-  </data>
-  <data name="rbnEmployee.Text" xml:space="preserve">
-    <value>Personel</value>
-  </data>
-  <data name="ribbonPageGroup6.Text" xml:space="preserve">
-    <value>ribbonPageGroup6</value>
-  </data>
-  <data name="rbnTools.Text" xml:space="preserve">
-    <value>Araçlar</value>
-  </data>
-  <data name="ribbonPageGroup7.Text" xml:space="preserve">
-    <value>ribbonPageGroup7</value>
-  </data>
-  <data name="rbnReports.Text" xml:space="preserve">
-    <value>Raporlar</value>
-  </data>
-  <data name="ribbonPageGroup10.Text" xml:space="preserve">
-    <value>ribbonPageGroup10</value>
-  </data>
-  <data name="rbnStatics.Text" xml:space="preserve">
-    <value>İstatistikler</value>
-  </data>
-  <data name="ribbonPageGroup16.Text" xml:space="preserve">
-    <value>ribbonPageGroup16</value>
-  </data>
-  <data name="rbnContact.Text" xml:space="preserve">
-    <value>İletişim</value>
-  </data>
-  <data name="ribbonControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1938, 150</value>
-  </data>
-  <data name="&gt;&gt;ribbonControl1.Name" xml:space="preserve">
-    <value>ribbonControl1</value>
-  </data>
-  <data name="&gt;&gt;ribbonControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="barAjanda.ImageOptions.LargeImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="barAjanda.ImageOptions.SvgImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
 </root>
