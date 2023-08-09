@@ -65,6 +65,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -191,6 +194,12 @@
     </Compile>
     <Compile Include="Formlar\FormProductSale.Designer.cs">
       <DependentUpon>FormProductSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FormQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormQR.Designer.cs">
+      <DependentUpon>FormQR.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FormSellList.cs">
       <SubType>Form</SubType>
@@ -331,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormProductSale.resx">
       <DependentUpon>FormProductSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormQR.resx">
+      <DependentUpon>FormQR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormSellList.resx">
       <DependentUpon>FormSellList.cs</DependentUpon>

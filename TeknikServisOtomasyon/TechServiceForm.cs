@@ -176,5 +176,18 @@ namespace TeknikServisOtomasyon
             Formlar.FormArizaDetaylar formAriza = new Formlar.FormArizaDetaylar();
             formAriza.Show();
         }
+
+        private void barCreateQR_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormQR formQR = new Formlar.FormQR();
+            formQR.Show();
+        }
+
+        private void barArizaliUrunDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormArizaListesi formArizaDetay = new Formlar.FormArizaListesi();
+            formArizaDetay.MdiParent = this;
+            formArizaDetay.Show();
+        }
     }
 }
