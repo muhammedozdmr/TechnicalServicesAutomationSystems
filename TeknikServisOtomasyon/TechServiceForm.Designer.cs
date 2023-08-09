@@ -99,6 +99,7 @@
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbnContact = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barInvoiceList = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,9 +150,10 @@
             this.barAjanda,
             this.barNewProductSale,
             this.barSaleList,
-            this.barArizaliUrunDetay});
+            this.barArizaliUrunDetay,
+            this.barInvoiceList});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 60;
+            this.ribbonControl1.MaxItemId = 61;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -632,6 +634,7 @@
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barInvoiceList);
             this.ribbonPageGroup1.ItemLinks.Add(this.barNewInvoice);
             this.ribbonPageGroup1.ItemLinks.Add(this.barNewInvoiceSection);
             this.ribbonPageGroup1.ItemLinks.Add(this.barSearchInvoiceDetails);
@@ -724,6 +727,15 @@
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
             resources.ApplyResources(this.ribbonPageGroup16, "ribbonPageGroup16");
             // 
+            // barInvoiceList
+            // 
+            resources.ApplyResources(this.barInvoiceList, "barInvoiceList");
+            this.barInvoiceList.Id = 60;
+            this.barInvoiceList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barInvoiceList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barInvoiceList.Name = "barInvoiceList";
+            this.barInvoiceList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barInvoiceList_ItemClick);
+            // 
             // TeknikServisForm
             // 
             this.AllowMdiBar = true;
@@ -813,6 +825,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.BarButtonItem barSaleList;
         private DevExpress.XtraBars.BarButtonItem barArizaliUrunDetay;
+        private DevExpress.XtraBars.BarButtonItem barInvoiceList;
     }
 }
 

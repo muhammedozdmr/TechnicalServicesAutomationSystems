@@ -3087,6 +3087,75 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="barInvoiceList.Caption" xml:space="preserve">
+    <value>Fatura Listesi</value>
+  </data>
+  <data name="barButtonItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAE3RFWHRUaXRsZQBMb2FkTWFw
+        O0xvYWQ7PBWDvgAAAx5JREFUOE+Nk31Mk1cUh1+Hmy7GZfqHMXE6ZYvR+EFiNqKiKGpUjMENJRVJMzMW
+        dA5hOlj8WKYzS+ZcRoMzFktRLFo+pAy/KggIs1VIjcy2oktcYkuxxUJLsTKUj/fZfbX/uGCykzw59577
+        Oyf3npsjASPyGhsV4RV7QxAVYXTEKzHpYGmr4pQEZf/mPoONb4usler9+imRmCTZT8Q3OnXxOE+8xKGN
+        56ZmcWpEELVDY07KPt5ky9ZaBnYet3DJ6SdHZw2qD1akKeeSXbsUeag9gpuBsBO7bk13wb5PPlDtNWz+
+        usDKeYefO6EhnE9k6h7L3PD2szKzRHnnWKn1aBzycydy2Mxw70Xk3moGAjW4LHoyD5vIr3nAxgPVLP6i
+        kKUZp/je/IDY9IKeDxP3bhMF3pJu5S1CfnYHOVSFHKxADhgZ7jpLOOBkfY6JhO06TDXX8LjtLFBrSc06
+        wsSZy+eL5DGCUVLL4Vjk/tvI3SKxU89gx28MuvMIe+vYk2ek4aqRsPsC/d5aQq6L2E15ytUnC8a9KGI9
+        9DFyXzNDj7T46j7nXvE62orW4bHk83f9r7gaNNwr+Yw/j62k9egKrn4zj9rd86jZNRdz1hy/1PjdAvo8
+        vxNoyeV+SQrDfQ7kf+4iP3UwHL4t+tLCUPA6g131DPgu89xj4tnDs3ibDlGZMfOWVJ8bg7dZQ1vxBtrr
+        DwixhSe2PfS25BC6sZuQNZue6zsJNn1JsCGDQF06XbVbsR1ZTqEq+gfpSvZcHKWZ3PxpCT13i3naduwV
+        YZdZjf9yGv4LKh5Xp+Cr+hTfuQ1c2jabrLhJMdL57bNo/HEtzT+vou8vvUhKp1MIO6uS8VUm4S1fz6Oy
+        RDqMa+g4swqPIYH7+YswpExvE00cL5Wpo6n+KganTkX3tV1CuJqOEiE8nUB78TLaTy7BrY/DVbgQly6W
+        hwUf8UfuLDSJU34RBcZKRclTbWWpM6hIi6ZiSzTlYl2+eQZlqumUKqQovI9xk2DjNM4kT+Nk0lTP1pgJ
+        s0WBF/PwtuAdwbsjMOE/KDHl/6MMSe9JCiOO8v8H6V/nQUnphFv60QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="barButtonItem1.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -3517,6 +3586,12 @@
   <data name="&gt;&gt;ribbonPageGroup16.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;barInvoiceList.Name" xml:space="preserve">
+    <value>barInvoiceList</value>
+  </data>
+  <data name="&gt;&gt;barInvoiceList.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>TeknikServisForm</value>
   </data>
@@ -3526,26 +3601,17 @@
   <data name="rbnHomePage.Text" xml:space="preserve">
     <value>Ana Sayfa</value>
   </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>ribbonPageGroup2</value>
-  </data>
-  <data name="ribbonPageGroup11.Text" xml:space="preserve">
-    <value>ribbonPageGroup11</value>
-  </data>
-  <data name="ribbonPageGroup12.Text" xml:space="preserve">
-    <value>ribbonPageGroup12</value>
-  </data>
-  <data name="ribbonPageGroup13.Text" xml:space="preserve">
-    <value>ribbonPageGroup13</value>
-  </data>
-  <data name="ribbonPageGroup14.Text" xml:space="preserve">
-    <value>ribbonPageGroup14</value>
-  </data>
   <data name="rbnProducts.Text" xml:space="preserve">
     <value>Ürünler</value>
   </data>
   <data name="rbnCustomers.Text" xml:space="preserve">
     <value>Cariler</value>
+  </data>
+  <data name="ribbonPageGroup4.Text" xml:space="preserve">
+    <value>ribbonPageGroup4</value>
+  </data>
+  <data name="ribbonPageGroup1.Text" xml:space="preserve">
+    <value>ribbonPageGroup1</value>
   </data>
   <data name="rbnInvoice.Text" xml:space="preserve">
     <value>Faturalar ve Hareketler</value>
@@ -3580,17 +3646,26 @@
   <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="ribbonPageGroup2.Text" xml:space="preserve">
+    <value>ribbonPageGroup2</value>
+  </data>
+  <data name="ribbonPageGroup11.Text" xml:space="preserve">
+    <value>ribbonPageGroup11</value>
+  </data>
+  <data name="ribbonPageGroup12.Text" xml:space="preserve">
+    <value>ribbonPageGroup12</value>
+  </data>
+  <data name="ribbonPageGroup13.Text" xml:space="preserve">
+    <value>ribbonPageGroup13</value>
+  </data>
+  <data name="ribbonPageGroup14.Text" xml:space="preserve">
+    <value>ribbonPageGroup14</value>
+  </data>
   <data name="ribbonPageGroup3.Text" xml:space="preserve">
     <value>ribbonPageGroup3</value>
   </data>
   <data name="ribbonPageGroup9.Text" xml:space="preserve">
     <value>ribbonPageGroup9</value>
-  </data>
-  <data name="ribbonPageGroup4.Text" xml:space="preserve">
-    <value>ribbonPageGroup4</value>
-  </data>
-  <data name="ribbonPageGroup1.Text" xml:space="preserve">
-    <value>ribbonPageGroup1</value>
   </data>
   <data name="ribbonPageGroup5.Text" xml:space="preserve">
     <value>ribbonPageGroup5</value>

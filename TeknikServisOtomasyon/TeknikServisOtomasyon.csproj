@@ -177,6 +177,12 @@
     <Compile Include="Formlar\FormEmployee.Designer.cs">
       <DependentUpon>FormEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FormInvoiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormInvoiceList.Designer.cs">
+      <DependentUpon>FormInvoiceList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FormNotes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormEmployee.resx">
       <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormInvoiceList.resx">
+      <DependentUpon>FormInvoiceList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormNotes.resx">
       <DependentUpon>FormNotes.cs</DependentUpon>

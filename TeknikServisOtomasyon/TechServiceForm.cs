@@ -189,5 +189,12 @@ namespace TeknikServisOtomasyon
             formArizaDetay.MdiParent = this;
             formArizaDetay.Show();
         }
+
+        private void barInvoiceList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormInvoiceList formFaturaListesi = new Formlar.FormInvoiceList();
+            formFaturaListesi.MdiParent = this;
+            formFaturaListesi.Show();
+        }
     }
 }
