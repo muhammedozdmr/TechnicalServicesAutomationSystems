@@ -98,6 +98,7 @@
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbnContact = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barArizaliUrunDetay = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,9 +148,10 @@
             this.barCards,
             this.barAjanda,
             this.barNewProductSale,
-            this.barSaleList});
+            this.barSaleList,
+            this.barArizaliUrunDetay});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 59;
+            this.ribbonControl1.MaxItemId = 60;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -223,6 +225,7 @@
             this.barNewBrokenProduct.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barNewBrokenProduct.ImageOptions.Image")));
             this.barNewBrokenProduct.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barNewBrokenProduct.ImageOptions.LargeImage")));
             this.barNewBrokenProduct.Name = "barNewBrokenProduct";
+            this.barNewBrokenProduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barNewBrokenProduct_ItemClick);
             // 
             // barBrokenProductInfo
             // 
@@ -231,6 +234,7 @@
             this.barBrokenProductInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBrokenProductInfo.ImageOptions.Image")));
             this.barBrokenProductInfo.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBrokenProductInfo.ImageOptions.LargeImage")));
             this.barBrokenProductInfo.Name = "barBrokenProductInfo";
+            this.barBrokenProductInfo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBrokenProductInfo_ItemClick);
             // 
             // barCreateQR
             // 
@@ -567,6 +571,7 @@
             this.ribbonPageGroup13.ItemLinks.Add(this.barBrokenProductList);
             this.ribbonPageGroup13.ItemLinks.Add(this.barNewBrokenProduct);
             this.ribbonPageGroup13.ItemLinks.Add(this.barBrokenProductInfo);
+            this.ribbonPageGroup13.ItemLinks.Add(this.barArizaliUrunDetay);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             resources.ApplyResources(this.ribbonPageGroup13, "ribbonPageGroup13");
             // 
@@ -709,6 +714,14 @@
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
             resources.ApplyResources(this.ribbonPageGroup16, "ribbonPageGroup16");
             // 
+            // barArizaliUrunDetay
+            // 
+            resources.ApplyResources(this.barArizaliUrunDetay, "barArizaliUrunDetay");
+            this.barArizaliUrunDetay.Id = 59;
+            this.barArizaliUrunDetay.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barArizaliUrunDetay.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barArizaliUrunDetay.Name = "barArizaliUrunDetay";
+            // 
             // TeknikServisForm
             // 
             this.AllowMdiBar = true;
@@ -797,6 +810,7 @@
         private DevExpress.XtraBars.BarButtonItem barNewProductSale;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.BarButtonItem barSaleList;
+        private DevExpress.XtraBars.BarButtonItem barArizaliUrunDetay;
     }
 }
 

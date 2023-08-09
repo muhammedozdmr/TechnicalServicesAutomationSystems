@@ -84,17 +84,35 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formlar\FormArizaDetaylar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormArizaDetaylar.Designer.cs">
+      <DependentUpon>FormArizaDetaylar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FormArizaListesi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\FormArizaListesi.Designer.cs">
       <DependentUpon>FormArizaListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FormArizaliUrunDetayListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormArizaliUrunDetayListesi.Designer.cs">
+      <DependentUpon>FormArizaliUrunDetayListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FormBrand.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\FormBrand.Designer.cs">
       <DependentUpon>FormBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FormBrokeProductSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormBrokeProductSave.Designer.cs">
+      <DependentUpon>FormBrokeProductSave.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FormCategoryList.cs">
       <SubType>Form</SubType>
@@ -260,11 +278,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formlar\FormArizaDetaylar.resx">
+      <DependentUpon>FormArizaDetaylar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormArizaListesi.resx">
       <DependentUpon>FormArizaListesi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormArizaliUrunDetayListesi.resx">
+      <DependentUpon>FormArizaliUrunDetayListesi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormBrand.resx">
       <DependentUpon>FormBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormBrokeProductSave.resx">
+      <DependentUpon>FormBrokeProductSave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormCategoryList.resx">
       <DependentUpon>FormCategoryList.cs</DependentUpon>

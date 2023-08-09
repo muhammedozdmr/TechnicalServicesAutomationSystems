@@ -163,5 +163,18 @@ namespace TeknikServisOtomasyon
             //formSale.MdiParent = this;
             formSale.Show();
         }
+
+        private void barNewBrokenProduct_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormBrokeProductSave formBroken= new Formlar.FormBrokeProductSave();
+            //formSale.MdiParent = this;
+            formBroken.Show();
+        }
+
+        private void barBrokenProductInfo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormArizaDetaylar formAriza = new Formlar.FormArizaDetaylar();
+            formAriza.Show();
+        }
     }
 }
