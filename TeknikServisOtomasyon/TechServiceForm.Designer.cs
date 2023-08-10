@@ -74,6 +74,7 @@
             this.barNewProductSale = new DevExpress.XtraBars.BarButtonItem();
             this.barSaleList = new DevExpress.XtraBars.BarButtonItem();
             this.barArizaliUrunDetay = new DevExpress.XtraBars.BarButtonItem();
+            this.barInvoiceList = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.rbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -99,7 +100,6 @@
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbnContact = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barInvoiceList = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -332,6 +332,7 @@
             this.barNewInvoiceSection.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barNewInvoiceSection.ImageOptions.Image")));
             this.barNewInvoiceSection.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barNewInvoiceSection.ImageOptions.LargeImage")));
             this.barNewInvoiceSection.Name = "barNewInvoiceSection";
+            this.barNewInvoiceSection.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barNewInvoiceSection_ItemClick);
             // 
             // barSearchInvoiceDetails
             // 
@@ -340,6 +341,7 @@
             this.barSearchInvoiceDetails.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barSearchInvoiceDetails.ImageOptions.Image")));
             this.barSearchInvoiceDetails.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barSearchInvoiceDetails.ImageOptions.LargeImage")));
             this.barSearchInvoiceDetails.Name = "barSearchInvoiceDetails";
+            this.barSearchInvoiceDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barSearchInvoiceDetails_ItemClick);
             // 
             // barConvertToPdf
             // 
@@ -536,6 +538,15 @@
             this.barArizaliUrunDetay.Name = "barArizaliUrunDetay";
             this.barArizaliUrunDetay.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barArizaliUrunDetay_ItemClick);
             // 
+            // barInvoiceList
+            // 
+            resources.ApplyResources(this.barInvoiceList, "barInvoiceList");
+            this.barInvoiceList.Id = 60;
+            this.barInvoiceList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barInvoiceList.ImageOptions.Image")));
+            this.barInvoiceList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barInvoiceList.ImageOptions.LargeImage")));
+            this.barInvoiceList.Name = "barInvoiceList";
+            this.barInvoiceList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barInvoiceList_ItemClick);
+            // 
             // ribbonMiniToolbar1
             // 
             this.ribbonMiniToolbar1.ParentControl = this;
@@ -726,15 +737,6 @@
             this.ribbonPageGroup16.ItemLinks.Add(this.barSendSMS);
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
             resources.ApplyResources(this.ribbonPageGroup16, "ribbonPageGroup16");
-            // 
-            // barInvoiceList
-            // 
-            resources.ApplyResources(this.barInvoiceList, "barInvoiceList");
-            this.barInvoiceList.Id = 60;
-            this.barInvoiceList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barInvoiceList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barInvoiceList.Name = "barInvoiceList";
-            this.barInvoiceList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barInvoiceList_ItemClick);
             // 
             // TeknikServisForm
             // 

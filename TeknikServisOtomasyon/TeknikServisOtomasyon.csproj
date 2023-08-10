@@ -177,6 +177,18 @@
     <Compile Include="Formlar\FormEmployee.Designer.cs">
       <DependentUpon>FormEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FormFaturaKalemDetaylari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormFaturaKalemDetaylari.Designer.cs">
+      <DependentUpon>FormFaturaKalemDetaylari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FormFaturaKalemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormFaturaKalemi.Designer.cs">
+      <DependentUpon>FormFaturaKalemi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FormInvoiceList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -337,6 +349,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormEmployee.resx">
       <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormFaturaKalemDetaylari.resx">
+      <DependentUpon>FormFaturaKalemDetaylari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormFaturaKalemi.resx">
+      <DependentUpon>FormFaturaKalemi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormInvoiceList.resx">
       <DependentUpon>FormInvoiceList.cs</DependentUpon>

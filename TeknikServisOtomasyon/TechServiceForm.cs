@@ -196,5 +196,19 @@ namespace TeknikServisOtomasyon
             formFaturaListesi.MdiParent = this;
             formFaturaListesi.Show();
         }
+
+        private void barNewInvoiceSection_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormFaturaKalemi formFaturaKalem = new Formlar.FormFaturaKalemi();
+            formFaturaKalem.MdiParent = this;
+            formFaturaKalem.Show();
+        }
+
+        private void barSearchInvoiceDetails_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormFaturaKalemDetaylari formFaturaKalemDetay = new Formlar.FormFaturaKalemDetaylari();
+            formFaturaKalemDetay.MdiParent = this;
+            formFaturaKalemDetay.Show();
+        }
     }
 }
