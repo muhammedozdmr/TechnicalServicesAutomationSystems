@@ -21,7 +21,7 @@ namespace TeknikServisOtomasyon.Formlar
         }
         private void FormCustomerCity_Load(object sender, EventArgs e)
         {
-            gridList.DataSource = db.TBLCARIs.OrderBy(x => x.IL).GroupBy(y => y.IL).Select(z => new { İL = z.Key, TOPLAM = z.Count() }).ToList();
+            gridList.DataSource = db.TBLCARI.OrderBy(x => x.IL).GroupBy(y => y.IL).Select(z => new { İL = z.Key, TOPLAM = z.Count() }).ToList();
             conn.Open();
             SqlCommand command = new SqlCommand("select IL,count(*) from TBLCARI group by IL", conn);
             SqlDataReader reader = command.ExecuteReader();

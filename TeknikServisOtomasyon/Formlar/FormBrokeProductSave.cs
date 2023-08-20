@@ -20,7 +20,7 @@ namespace TeknikServisOtomasyon.Formlar
         private void btnFillCustomer_Click(object sender, EventArgs e)
         {
             var serialNumber = txtSeriNo.Text;
-            var serinoToPersonal = db.TBLURUNHAREKETs.Where(x => x.URUNSERINO == serialNumber).ToList();
+            var serinoToPersonal = db.TBLURUNHAREKET.Where(x => x.URUNSERINO == serialNumber).ToList();
             var data = (from u in serinoToPersonal
                         select new
                         {
@@ -45,7 +45,7 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void FormBrokeProductSave_Load(object sender, EventArgs e)
         {
-            var customer = db.TBLCARIs.ToList();
+            var customer = db.TBLCARI.ToList();
             var dataCustomer = (from u in customer
                                 select new
                                 {
@@ -55,7 +55,7 @@ namespace TeknikServisOtomasyon.Formlar
             cmbCustomer.DataSource = dataCustomer;
             cmbCustomer.DisplayMember = "Müşteri";
             cmbCustomer.ValueMember = "CustomerID";
-            var personal = db.TBLPERSONELs.ToList();
+            var personal = db.TBLPERSONEL.ToList();
             var dataPersonal = (from u in personal
                                 select new
                                 {
@@ -74,7 +74,7 @@ namespace TeknikServisOtomasyon.Formlar
             t.GELISTARIHI = dateProduct.Value;
             t.PERSONEL = (short)cmbPersonal.SelectedValue;
             t.URUNSERINO = txtSeriNo.Text;
-            db.TBLURUNKABULs.Add(t);
+            db.TBLURUNKABUL.Add(t);
             db.SaveChanges();
             MessageBox.Show("Ürün arıza girişi yapıldı.");
         }

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeknikServisOtomasyon", "TeknikServisOtomasyon\TeknikServisOtomasyon.csproj", "{DE7771DF-51F7-42DF-9743-90964C67EE36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeknikServis_Web", "TeknikServis_Web\TeknikServis_Web.csproj", "{D95E7BDF-A71A-4147-A601-B16DC3638A8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DE7771DF-51F7-42DF-9743-90964C67EE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE7771DF-51F7-42DF-9743-90964C67EE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE7771DF-51F7-42DF-9743-90964C67EE36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95E7BDF-A71A-4147-A601-B16DC3638A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95E7BDF-A71A-4147-A601-B16DC3638A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95E7BDF-A71A-4147-A601-B16DC3638A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95E7BDF-A71A-4147-A601-B16DC3638A8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

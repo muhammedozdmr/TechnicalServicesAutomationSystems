@@ -17,7 +17,7 @@ namespace TeknikServisOtomasyon
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBLDEPARTMAN()
         {
-            this.TBLPERSONELs = new HashSet<TBLPERSONEL>();
+            this.TBLPERSONEL = new HashSet<TBLPERSONEL>();
         }
     
         public byte ID { get; set; }
@@ -25,6 +25,6 @@ namespace TeknikServisOtomasyon
         public string ACIKLAMA { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLPERSONEL> TBLPERSONELs { get; set; }
+        public virtual ICollection<TBLPERSONEL> TBLPERSONEL { get; set; }
     }
 }

@@ -19,10 +19,10 @@ namespace TeknikServisOtomasyon
         public string SIRANO { get; set; }
         public Nullable<System.DateTime> TARIH { get; set; }
         public string SAAT { get; set; }
-        public string VERGIDAIRE { get; set; }
+        public byte[] VERGIDAIRE1 { get; set; }
         public Nullable<int> CARI { get; set; }
         public Nullable<short> PERSONEL { get; set; }
-        public byte[] VERGIDAIRE1 { get; set; }
+        public string VERGIDAIRE { get; set; }
     
         public virtual TBLCARI TBLCARI { get; set; }
         public virtual TBLPERSONEL TBLPERSONEL { get; set; }

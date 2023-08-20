@@ -17,13 +17,13 @@ namespace TeknikServisOtomasyon
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBLKATEGORI()
         {
-            this.TBLURUNs = new HashSet<TBLURUN>();
+            this.TBLURUN = new HashSet<TBLURUN>();
         }
     
         public byte ID { get; set; }
         public string AD { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLURUN> TBLURUNs { get; set; }
+        public virtual ICollection<TBLURUN> TBLURUN { get; set; }
     }
 }

@@ -21,7 +21,7 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void FormEmployee_Load(object sender, EventArgs e)
         {
-            var degerler = from p in db.TBLPERSONELs
+            var degerler = from p in db.TBLPERSONEL
                            select new
                            {
                                p.ID,
@@ -32,7 +32,7 @@ namespace TeknikServisOtomasyon.Formlar
                            };
             gridList.DataSource = degerler.ToList();
 
-            cmbDeparment.Properties.DataSource = (from x in db.TBLDEPARTMen
+            cmbDeparment.Properties.DataSource = (from x in db.TBLDEPARTMAN
                                                 select new
                                                 {
                                                     x.ID,
@@ -45,32 +45,32 @@ namespace TeknikServisOtomasyon.Formlar
             string ad1, soyad1, ad2, soyad2, ad3, soyad3, ad4, soyad4;
 
             //1. Personel
-            ad1 = db.TBLPERSONELs.First(x => x.ID == 2).AD;
-            soyad1 = db.TBLPERSONELs.First(x => x.ID == 2).SOYAD;
+            ad1 = db.TBLPERSONEL.First(x => x.ID == 2).AD;
+            soyad1 = db.TBLPERSONEL.First(x => x.ID == 2).SOYAD;
             labelControl8.Text = ad1 + " " + soyad1;
-            labelControl9.Text = db.TBLPERSONELs.First(x => x.ID == 2).TBLDEPARTMAN.AD;
-            labelControl10.Text = db.TBLPERSONELs.First(x => x.ID == 2).MAIL;
+            labelControl9.Text = db.TBLPERSONEL.First(x => x.ID == 2).TBLDEPARTMAN.AD;
+            labelControl10.Text = db.TBLPERSONEL.First(x => x.ID == 2).MAIL;
 
             //2.Personel
-            ad2 = db.TBLPERSONELs.First(x => x.ID == 1).AD;
-            soyad2 = db.TBLPERSONELs.First(x => x.ID == 1).SOYAD;
+            ad2 = db.TBLPERSONEL.First(x => x.ID == 1).AD;
+            soyad2 = db.TBLPERSONEL.First(x => x.ID == 1).SOYAD;
             labelControl13.Text = ad2 + " " + soyad2;
-            labelControl12.Text = db.TBLPERSONELs.First(x => x.ID == 1).TBLDEPARTMAN.AD;
-            labelControl11.Text = db.TBLPERSONELs.First(x => x.ID == 1).MAIL;
+            labelControl12.Text = db.TBLPERSONEL.First(x => x.ID == 1).TBLDEPARTMAN.AD;
+            labelControl11.Text = db.TBLPERSONEL.First(x => x.ID == 1).MAIL;
 
             //3. Personel
-            ad3 = db.TBLPERSONELs.First(x => x.ID == 4).AD;
-            soyad3 = db.TBLPERSONELs.First(x => x.ID == 4).SOYAD;
+            ad3 = db.TBLPERSONEL.First(x => x.ID == 4).AD;
+            soyad3 = db.TBLPERSONEL.First(x => x.ID == 4).SOYAD;
             labelControl19.Text = ad3 + " " + soyad3;
-            labelControl18.Text = db.TBLPERSONELs.First(x => x.ID == 4).TBLDEPARTMAN.AD;
-            labelControl17.Text = db.TBLPERSONELs.First(x => x.ID == 4).MAIL;
+            labelControl18.Text = db.TBLPERSONEL.First(x => x.ID == 4).TBLDEPARTMAN.AD;
+            labelControl17.Text = db.TBLPERSONEL.First(x => x.ID == 4).MAIL;
 
             //4.Personel
-            ad4 = db.TBLPERSONELs.First(x => x.ID == 3).AD;
-            soyad4 = db.TBLPERSONELs.First(x => x.ID == 3).SOYAD;
+            ad4 = db.TBLPERSONEL.First(x => x.ID == 3).AD;
+            soyad4 = db.TBLPERSONEL.First(x => x.ID == 3).SOYAD;
             labelControl25.Text = ad4 + " " + soyad4;
-            labelControl24.Text = db.TBLPERSONELs.First(x => x.ID == 3).TBLDEPARTMAN.AD;
-            labelControl23.Text = db.TBLPERSONELs.First(x => x.ID == 3).MAIL;
+            labelControl24.Text = db.TBLPERSONEL.First(x => x.ID == 3).TBLDEPARTMAN.AD;
+            labelControl23.Text = db.TBLPERSONEL.First(x => x.ID == 3).MAIL;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace TeknikServisOtomasyon.Formlar
             p.MAIL = txtMail.Text;
             p.TELEFON = txtPhone.Text;
             p.DEPARTMAN = byte.Parse(cmbDeparment.Properties.ValueMember);
-            db.TBLPERSONELs.Add(p);
+            db.TBLPERSONEL.Add(p);
             db.SaveChanges();
             ClearForm();
         }
@@ -98,7 +98,7 @@ namespace TeknikServisOtomasyon.Formlar
         }
         private void GetListCategory()
         {
-            var personal = from p in db.TBLPERSONELs
+            var personal = from p in db.TBLPERSONEL
                              select new
                              {
                                  p.ID,

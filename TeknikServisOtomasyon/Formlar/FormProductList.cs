@@ -34,7 +34,7 @@ namespace TeknikServisOtomasyon.Formlar
             tableProduct.STOK = short.Parse(txtStock.Text);
             tableProduct.DURUM = false;
             tableProduct.KATEGORI = byte.Parse(cmbCategory.EditValue.ToString());
-            db.TBLURUNs.Add(tableProduct);
+            db.TBLURUN.Add(tableProduct);
             db.SaveChanges();
             MessageBox.Show("Ürün kaydedildi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -45,7 +45,7 @@ namespace TeknikServisOtomasyon.Formlar
         }
         private void GetListCategory()
         {
-            var products = from u in db.TBLURUNs
+            var products = from u in db.TBLURUN
                            select new
                            {
                                u.ID,
@@ -63,7 +63,7 @@ namespace TeknikServisOtomasyon.Formlar
             //hepsi gelir
             //var products = db.TBLURUNs.ToList();
             GetListCategory();
-            cmbCategory.Properties.DataSource = db.TBLKATEGORIs.ToList();
+            cmbCategory.Properties.DataSource = db.TBLKATEGORI.ToList();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -79,8 +79,8 @@ namespace TeknikServisOtomasyon.Formlar
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
             int id = int.Parse(txtProductID.Text);
-            var deger = db.TBLURUNs.Find(id);
-            db.TBLURUNs.Remove(deger);
+            var deger = db.TBLURUN.Find(id);
+            db.TBLURUN.Remove(deger);
             db.SaveChanges();
             MessageBox.Show("Ürün başarıyla silindi !","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             FormListRefresh();
@@ -89,7 +89,7 @@ namespace TeknikServisOtomasyon.Formlar
         private void btnUpdateProduct_Click(object sender, EventArgs e)
         {
             int id = int.Parse(txtProductID.Text);
-            var deger = db.TBLURUNs.Find(id);
+            var deger = db.TBLURUN.Find(id);
             deger.AD = txtProductName.Text;
             deger.MARKA = txtProductMark.Text;
             deger.STOK = short.Parse(txtStock.Text);

@@ -17,7 +17,7 @@ namespace TeknikServisOtomasyon
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBLURUN()
         {
-            this.TBLURUNHAREKETs = new HashSet<TBLURUNHAREKET>();
+            this.TBLURUNHAREKET = new HashSet<TBLURUNHAREKET>();
         }
     
         public int ID { get; set; }
@@ -31,6 +31,6 @@ namespace TeknikServisOtomasyon
     
         public virtual TBLKATEGORI TBLKATEGORI { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLURUNHAREKET> TBLURUNHAREKETs { get; set; }
+        public virtual ICollection<TBLURUNHAREKET> TBLURUNHAREKET { get; set; }
     }
 }

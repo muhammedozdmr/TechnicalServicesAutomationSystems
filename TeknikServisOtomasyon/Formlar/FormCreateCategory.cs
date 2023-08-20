@@ -23,7 +23,7 @@ namespace TeknikServisOtomasyon.Formlar
         {
             TBLKATEGORI table = new TBLKATEGORI();
             table.AD = txtCategoryName.Text;
-            db.TBLKATEGORIs.Add(table);
+            db.TBLKATEGORI.Add(table);
             db.SaveChanges();
             MessageBox.Show("Kategori Kaydedildi !");
         }

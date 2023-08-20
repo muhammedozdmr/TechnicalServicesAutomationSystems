@@ -26,7 +26,7 @@ namespace TeknikServisOtomasyon.Formlar
                 TBLDEPARTMAN table = new TBLDEPARTMAN();
                 table.AD = txtName.Text;
                 table.ACIKLAMA = textEdit1.Text;
-                db.TBLDEPARTMen.Add(table);
+                db.TBLDEPARTMAN.Add(table);
                 db.SaveChanges();
                 MessageBox.Show("Departman Kaydedildi !", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

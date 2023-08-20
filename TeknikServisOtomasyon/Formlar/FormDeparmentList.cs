@@ -31,7 +31,7 @@ namespace TeknikServisOtomasyon.Formlar
             {
                 t.AD = txtProductName.Text;
                 t.ACIKLAMA = richTextBox1.Text;
-                db.TBLDEPARTMen.Add(t);
+                db.TBLDEPARTMAN.Add(t);
                 db.SaveChanges();
                 MessageBox.Show("Departman kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FormListRefresh();
@@ -47,7 +47,7 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void GetListCategory()
         {
-            var department = from u in db.TBLDEPARTMen
+            var department = from u in db.TBLDEPARTMAN
                              select new
                              {
                                  u.ID,
@@ -55,8 +55,8 @@ namespace TeknikServisOtomasyon.Formlar
                                  u.ACIKLAMA
                              };
             gridList.DataSource = department.ToList();
-            lblCountDeparment.Text = db.TBLDEPARTMen.Count().ToString();
-            labelControl6.Text = db.TBLPERSONELs.Count().ToString();
+            lblCountDeparment.Text = db.TBLDEPARTMAN.Count().ToString();
+            labelControl6.Text = db.TBLPERSONEL.Count().ToString();
         }
         private void FormListRefresh()
         {
@@ -85,8 +85,8 @@ namespace TeknikServisOtomasyon.Formlar
         private void btnDelete_Click(object sender, EventArgs e)
         {
             int id = int.Parse(txtProductID.Text);
-            var deger = db.TBLDEPARTMen.Find(id);
-            db.TBLDEPARTMen.Remove(deger);
+            var deger = db.TBLDEPARTMAN.Find(id);
+            db.TBLDEPARTMAN.Remove(deger);
             db.SaveChanges();
             MessageBox.Show("Departman silindi !","Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             FormListRefresh();
@@ -96,7 +96,7 @@ namespace TeknikServisOtomasyon.Formlar
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             int id = int.Parse(txtProductID.Text);
-            var deger = db.TBLDEPARTMen.Find(id);
+            var deger = db.TBLDEPARTMAN.Find(id);
             deger.AD = txtProductName.Text;
             deger.ACIKLAMA = richTextBox1.Text;
             db.SaveChanges();

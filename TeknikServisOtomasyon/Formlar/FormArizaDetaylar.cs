@@ -24,7 +24,7 @@ namespace TeknikServisOtomasyon.Formlar
             t.ACIKLAMA = txtDetails.Text;
             t.TARIH = dateCreate.Value;
             t.SERINO = txtSerialNumber.Text;
-            db.TBLURUNTAKIPs.Add(t);
+            db.TBLURUNTAKIP.Add(t);
             db.SaveChanges();
             MessageBox.Show("Ürün arıza detayları eklendi");
         }

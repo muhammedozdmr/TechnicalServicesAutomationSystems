@@ -20,7 +20,7 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void gridList_Click(object sender, EventArgs e)
         {
-            gridList.DataSource = (from x in db.TBLURUNTAKIPs
+            gridList.DataSource = (from x in db.TBLURUNTAKIP
                                    select new
                                    {
                                        x.TAKIPID,

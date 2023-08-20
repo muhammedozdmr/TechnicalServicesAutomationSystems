@@ -20,15 +20,15 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void FormBrand_Load(object sender, EventArgs e)
         {
-            var degerler = db.TBLURUNs.OrderBy(x => x.MARKA).GroupBy(y => y.MARKA).Select(z => new
+            var degerler = db.TBLURUN.OrderBy(x => x.MARKA).GroupBy(y => y.MARKA).Select(z => new
             {
                 Marka = z.Key,
                 Toplam = z.Count()
             });
             gridBrandList.DataSource = degerler.ToList();
-            lblMarkaSayisi.Text = (from x in db.TBLURUNs select x.MARKA).Distinct().Count().ToString();
-            lblUrunSayisi.Text = db.TBLURUNs.Count().ToString();
-            lblEnYuksekFiyatMarka.Text = (from x in db.TBLURUNs orderby x.SATISFIYAT descending select x.MARKA).FirstOrDefault();
+            lblMarkaSayisi.Text = (from x in db.TBLURUN select x.MARKA).Distinct().Count().ToString();
+            lblUrunSayisi.Text = db.TBLURUN.Count().ToString();
+            lblEnYuksekFiyatMarka.Text = (from x in db.TBLURUN orderby x.SATISFIYAT descending select x.MARKA).FirstOrDefault();
             chartControl1.Series["Series 1"].Points.AddPoint("Siemens", 4);
             chartControl1.Series["Series 1"].Points.AddPoint("Beko", 6);
             chartControl1.Series["Series 1"].Points.AddPoint("Arçelik", 7);

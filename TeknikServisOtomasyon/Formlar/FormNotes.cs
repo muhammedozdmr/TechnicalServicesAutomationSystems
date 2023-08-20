@@ -21,8 +21,8 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void FormNotes_Load(object sender, EventArgs e)
         {
-            gridList.DataSource = db.TBLNOTLARIMs.Where(x => x.DURUM == false).ToList();
-            gridControl1.DataSource = db.TBLNOTLARIMs.Where(y => y.DURUM == true).ToList();
+            gridList.DataSource = db.TBLNOTLARIM.Where(x => x.DURUM == false).ToList();
+            gridControl1.DataSource = db.TBLNOTLARIM.Where(y => y.DURUM == true).ToList();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -31,15 +31,15 @@ namespace TeknikServisOtomasyon.Formlar
             t.BASLIK = txtTitle.Text;
             t.ICERIK = txtInfo.Text;
             t.DURUM = false;
-            db.TBLNOTLARIMs.Add(t);
+            db.TBLNOTLARIM.Add(t);
             db.SaveChanges();
             MessageBox.Show("Not kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnList_Click(object sender, EventArgs e)
         {
-            gridList.DataSource = db.TBLNOTLARIMs.Where(x => x.DURUM == false).ToList();
-            gridControl1.DataSource = db.TBLNOTLARIMs.Where(y => y.DURUM == true).ToList();
+            gridList.DataSource = db.TBLNOTLARIM.Where(x => x.DURUM == false).ToList();
+            gridControl1.DataSource = db.TBLNOTLARIM.Where(y => y.DURUM == true).ToList();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace TeknikServisOtomasyon.Formlar
             if (chkStatus.Checked == true)
             {
                 int id = int.Parse(txtID.Text);
-                var deger = db.TBLNOTLARIMs.Find(id);
+                var deger = db.TBLNOTLARIM.Find(id);
                 deger.DURUM = true;
                 db.SaveChanges();
                 MessageBox.Show("Not durumu güncelleme başarılı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);

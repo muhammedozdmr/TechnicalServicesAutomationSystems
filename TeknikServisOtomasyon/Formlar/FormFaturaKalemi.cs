@@ -31,13 +31,13 @@ namespace TeknikServisOtomasyon.Formlar
             t.FIYAT = decimal.Parse(txtFiyat.Text);
             t.TUTAR = decimal.Parse(txtTutar.Text);
             t.FATURAID = txtFaturaID.Text;
-            db.TBLFATURADETAYs.Add(t);
+            db.TBLFATURADETAY.Add(t);
             db.SaveChanges();
             MessageBox.Show("Faturaya ait kalem girişi başarı ile yapıldı");
         }
         private void LoadForm()
         {
-            var degerler = from u in db.TBLFATURADETAYs
+            var degerler = from u in db.TBLFATURADETAY
                            select new
                            {
                                u.FATURADETAYID,

@@ -17,9 +17,9 @@ namespace TeknikServisOtomasyon
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBLPERSONEL()
         {
-            this.TBLFATURABILGIs = new HashSet<TBLFATURABILGI>();
-            this.TBLURUNHAREKETs = new HashSet<TBLURUNHAREKET>();
-            this.TBLURUNKABULs = new HashSet<TBLURUNKABUL>();
+            this.TBLFATURABILGI = new HashSet<TBLFATURABILGI>();
+            this.TBLURUNHAREKET = new HashSet<TBLURUNHAREKET>();
+            this.TBLURUNKABUL = new HashSet<TBLURUNKABUL>();
         }
     
         public short ID { get; set; }
@@ -32,10 +32,10 @@ namespace TeknikServisOtomasyon
     
         public virtual TBLDEPARTMAN TBLDEPARTMAN { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLFATURABILGI> TBLFATURABILGIs { get; set; }
+        public virtual ICollection<TBLFATURABILGI> TBLFATURABILGI { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLURUNHAREKET> TBLURUNHAREKETs { get; set; }
+        public virtual ICollection<TBLURUNHAREKET> TBLURUNHAREKET { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLURUNKABUL> TBLURUNKABULs { get; set; }
+        public virtual ICollection<TBLURUNKABUL> TBLURUNKABUL { get; set; }
     }
 }

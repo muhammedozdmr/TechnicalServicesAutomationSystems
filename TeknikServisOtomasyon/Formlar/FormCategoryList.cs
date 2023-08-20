@@ -26,14 +26,14 @@ namespace TeknikServisOtomasyon.Formlar
         {
             TBLKATEGORI category = new TBLKATEGORI();
             category.AD = txtCategoryName.Text;
-            db.TBLKATEGORIs.Add(category);
+            db.TBLKATEGORI.Add(category);
             db.SaveChanges();
             MessageBox.Show("Kategori kaydedildi.");
             FormList();
         }
         private void FormList()
         {
-            var degerler = from k in db.TBLKATEGORIs
+            var degerler = from k in db.TBLKATEGORI
                            select new
                            {
                                k.ID,
@@ -56,8 +56,8 @@ namespace TeknikServisOtomasyon.Formlar
         private void btnDelete_Click(object sender, EventArgs e)
         {
             int id = int.Parse(txtCategoryID.Text);
-            var deger = db.TBLKATEGORIs.Find(id);
-            db.TBLKATEGORIs.Remove(deger);
+            var deger = db.TBLKATEGORI.Find(id);
+            db.TBLKATEGORI.Remove(deger);
             db.SaveChanges();
             MessageBox.Show("Kategori başarıyla silindi !", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             FormList();
@@ -66,7 +66,7 @@ namespace TeknikServisOtomasyon.Formlar
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             int id = int.Parse(txtCategoryID.Text);
-            var deger = db.TBLKATEGORIs.Find(id);
+            var deger = db.TBLKATEGORI.Find(id);
             deger.AD = txtCategoryName.Text;
             db.SaveChanges();
             MessageBox.Show("Kategori başarıyla güncellendi !", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -20,7 +20,7 @@ namespace TeknikServisOtomasyon.Formlar
         DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
         private void FormSellList_Load(object sender, EventArgs e)
         {
-            var degerler = from x in db.TBLURUNHAREKETs
+            var degerler = from x in db.TBLURUNHAREKET
                            select new
                            {
                                x.HAREKETID,

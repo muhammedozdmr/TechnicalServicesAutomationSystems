@@ -21,7 +21,7 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void FormCustomerList_Load(object sender, EventArgs e)
         {
-            gridList.DataSource = db.TBLCARIs.ToList();
+            gridList.DataSource = db.TBLCARI.ToList();
         }
     }
 }

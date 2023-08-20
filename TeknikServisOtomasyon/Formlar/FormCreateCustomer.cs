@@ -29,7 +29,7 @@ namespace TeknikServisOtomasyon.Formlar
             t.ADRES = txtAddress.Text;
             t.BANKA = txtBank.Text;
 
-            db.TBLCARIs.Add(t);
+            db.TBLCARI.Add(t);
             db.SaveChanges();
             MessageBox.Show("Yeni cari kaydedildi !","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }

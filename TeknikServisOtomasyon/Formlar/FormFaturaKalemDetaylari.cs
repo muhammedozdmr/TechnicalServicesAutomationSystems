@@ -21,7 +21,7 @@ namespace TeknikServisOtomasyon.Formlar
         private void btnSearch_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(txtFaturaId.Text);
-            var degerler = (from u in db.TBLFATURADETAYs
+            var degerler = (from u in db.TBLFATURADETAY
                            select new
                            {
                                u.FATURADETAYID,

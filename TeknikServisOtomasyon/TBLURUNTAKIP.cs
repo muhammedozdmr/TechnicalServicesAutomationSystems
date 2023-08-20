@@ -15,8 +15,8 @@ namespace TeknikServisOtomasyon
     public partial class TBLURUNTAKIP
     {
         public int TAKIPID { get; set; }
-        public Nullable<System.DateTime> TARIH { get; set; }
         public string ACIKLAMA { get; set; }
         public string SERINO { get; set; }
+        public Nullable<System.DateTime> TARIH { get; set; }
     }
 }

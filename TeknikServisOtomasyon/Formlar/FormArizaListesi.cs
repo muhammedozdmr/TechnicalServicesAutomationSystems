@@ -20,7 +20,7 @@ namespace TeknikServisOtomasyon.Formlar
         }
         private void FormArizaListesi_Load(object sender, EventArgs e)
         {
-            var degerler = from x in db.TBLURUNKABULs
+            var degerler = from x in db.TBLURUNKABUL
                            select new
                            {
                                x.ISLEMID,

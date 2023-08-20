@@ -33,7 +33,7 @@ namespace TeknikServisOtomasyon.Formlar
             urun.ALISFIYAT = decimal.Parse(txtBuyPrice.Text);
             urun.STOK = short.Parse(txtStock.Text);
             urun.KATEGORI = byte.Parse(txtCategory.Text);
-            db.TBLURUNs.Add(urun);
+            db.TBLURUN.Add(urun);
             db.SaveChanges();
             MessageBox.Show("Ürün başarıylka kaydedildi");
         }

@@ -17,9 +17,9 @@ namespace TeknikServisOtomasyon
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBLCARI()
         {
-            this.TBLFATURABILGIs = new HashSet<TBLFATURABILGI>();
-            this.TBLURUNHAREKETs = new HashSet<TBLURUNHAREKET>();
-            this.TBLURUNKABULs = new HashSet<TBLURUNKABUL>();
+            this.TBLFATURABILGI = new HashSet<TBLFATURABILGI>();
+            this.TBLURUNHAREKET = new HashSet<TBLURUNHAREKET>();
+            this.TBLURUNKABUL = new HashSet<TBLURUNKABUL>();
         }
     
         public int ID { get; set; }
@@ -28,18 +28,18 @@ namespace TeknikServisOtomasyon
         public string TELEFON { get; set; }
         public string MAIL { get; set; }
         public string IL { get; set; }
-        public string ILCE { get; set; }
         public string BANKA { get; set; }
         public string VERGIDAIRESI { get; set; }
         public string VERGINO { get; set; }
         public string STATU { get; set; }
         public string ADRES { get; set; }
+        public string ILCE { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLFATURABILGI> TBLFATURABILGIs { get; set; }
+        public virtual ICollection<TBLFATURABILGI> TBLFATURABILGI { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLURUNHAREKET> TBLURUNHAREKETs { get; set; }
+        public virtual ICollection<TBLURUNHAREKET> TBLURUNHAREKET { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLURUNKABUL> TBLURUNKABULs { get; set; }
+        public virtual ICollection<TBLURUNKABUL> TBLURUNKABUL { get; set; }
     }
 }

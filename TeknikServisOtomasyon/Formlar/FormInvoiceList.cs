@@ -20,8 +20,8 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void LoadForm()
         {
-            gridList.DataSource = db.TBLFATURABILGIs.ToList();
-            var degerler = from u in db.TBLFATURABILGIs
+            gridList.DataSource = db.TBLFATURABILGI.ToList();
+            var degerler = from u in db.TBLFATURABILGI
                            select new
                            {
                                u.ID,
@@ -33,13 +33,13 @@ namespace TeknikServisOtomasyon.Formlar
                                CARI = u.TBLCARI.AD + " " + u.TBLCARI.SOYAD,
                                PERSONEL = u.TBLPERSONEL.AD + " " + u.TBLPERSONEL.SOYAD
                            };
-            cmbCustomer.Properties.DataSource = (from x in db.TBLCARIs
+            cmbCustomer.Properties.DataSource = (from x in db.TBLCARI
                                                  select new
                                                  {
                                                      x.ID,
                                                      AD = x.AD + " " + x.SOYAD
                                                  }).ToList();
-            cmbPersonal.Properties.DataSource = (from x in db.TBLPERSONELs
+            cmbPersonal.Properties.DataSource = (from x in db.TBLPERSONEL
                                                  select new
                                                  {
                                                      x.ID,
@@ -66,7 +66,7 @@ namespace TeknikServisOtomasyon.Formlar
             t.CARI = int.Parse(cmbCustomer.EditValue.ToString());
             t.PERSONEL = short.Parse(cmbPersonal.EditValue.ToString());
             t.VERGIDAIRE = txtTax.Text;
-            db.TBLFATURABILGIs.Add(t);
+            db.TBLFATURABILGI.Add(t);
             db.SaveChanges();
             MessageBox.Show("Fatura sisteme kaydedilmiştir. Kalem girişi yapabilirsiniz !");
         }

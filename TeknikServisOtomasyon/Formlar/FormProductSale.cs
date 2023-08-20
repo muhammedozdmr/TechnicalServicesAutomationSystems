@@ -28,7 +28,7 @@ namespace TeknikServisOtomasyon.Formlar
             t.ADET = short.Parse(txtCount.Text);
             t.FIYAT = decimal.Parse(txtSellPrice.Text);
             t.URUNSERINO = textSerialNO.Text;
-            db.TBLURUNHAREKETs.Add(t);
+            db.TBLURUNHAREKET.Add(t);
             db.SaveChanges();
             MessageBox.Show("Ürün Satışı Yapıldı");
         }
