@@ -18,14 +18,21 @@ namespace TeknikServisOtomasyon.Formlar
             InitializeComponent();
         }
 
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1 ();
+        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
         private void btnSave_Click(object sender, EventArgs e)
         {
-            TBLKATEGORI table = new TBLKATEGORI();
-            table.AD = txtCategoryName.Text;
-            db.TBLKATEGORI.Add(table);
-            db.SaveChanges();
-            MessageBox.Show("Kategori Kaydedildi !");
+            if (!string.IsNullOrEmpty(txtCategoryName.Text))
+            {
+                TBLKATEGORI table = new TBLKATEGORI();
+                table.AD = txtCategoryName.Text;
+                db.TBLKATEGORI.Add(table);
+                db.SaveChanges();
+                MessageBox.Show("Kategori Kaydedildi !");
+            }
+            else
+            {
+                MessageBox.Show("Boş geçilemez","Uyarı",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

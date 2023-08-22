@@ -115,7 +115,7 @@
             this.txtProductID.Location = new System.Drawing.Point(97, 53);
             this.txtProductID.Name = "txtProductID";
             this.txtProductID.Size = new System.Drawing.Size(292, 20);
-            this.txtProductID.TabIndex = 20;
+            this.txtProductID.TabIndex = 0;
             // 
             // lblProductID
             // 
@@ -131,7 +131,7 @@
             this.btnProductList.Location = new System.Drawing.Point(97, 382);
             this.btnProductList.Name = "btnProductList";
             this.btnProductList.Size = new System.Drawing.Size(292, 38);
-            this.btnProductList.TabIndex = 18;
+            this.btnProductList.TabIndex = 10;
             this.btnProductList.Text = "LİSTELE";
             // 
             // btnUpdateProduct
@@ -140,7 +140,7 @@
             this.btnUpdateProduct.Location = new System.Drawing.Point(96, 338);
             this.btnUpdateProduct.Name = "btnUpdateProduct";
             this.btnUpdateProduct.Size = new System.Drawing.Size(292, 38);
-            this.btnUpdateProduct.TabIndex = 17;
+            this.btnUpdateProduct.TabIndex = 9;
             this.btnUpdateProduct.Text = "GÜNCELLE";
             this.btnUpdateProduct.Click += new System.EventHandler(this.btnUpdateProduct_Click);
             // 
@@ -150,7 +150,7 @@
             this.btnDeleteProduct.Location = new System.Drawing.Point(96, 294);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
             this.btnDeleteProduct.Size = new System.Drawing.Size(292, 38);
-            this.btnDeleteProduct.TabIndex = 16;
+            this.btnDeleteProduct.TabIndex = 8;
             this.btnDeleteProduct.Text = "SİL";
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
@@ -160,7 +160,7 @@
             this.btnSaveProduct.Location = new System.Drawing.Point(96, 250);
             this.btnSaveProduct.Name = "btnSaveProduct";
             this.btnSaveProduct.Size = new System.Drawing.Size(292, 38);
-            this.btnSaveProduct.TabIndex = 15;
+            this.btnSaveProduct.TabIndex = 7;
             this.btnSaveProduct.Text = "KAYDET";
             this.btnSaveProduct.Click += new System.EventHandler(this.btnSaveProduct_Click);
             // 
@@ -173,7 +173,7 @@
             this.cmbCategory.Properties.DisplayMember = "AD";
             this.cmbCategory.Properties.ValueMember = "ID";
             this.cmbCategory.Size = new System.Drawing.Size(292, 20);
-            this.cmbCategory.TabIndex = 14;
+            this.cmbCategory.TabIndex = 6;
             // 
             // lblCategory
             // 
@@ -188,7 +188,7 @@
             this.txtStock.Location = new System.Drawing.Point(97, 184);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(292, 20);
-            this.txtStock.TabIndex = 12;
+            this.txtStock.TabIndex = 5;
             // 
             // lblStock
             // 
@@ -203,7 +203,7 @@
             this.txtSellPrice.Location = new System.Drawing.Point(96, 157);
             this.txtSellPrice.Name = "txtSellPrice";
             this.txtSellPrice.Size = new System.Drawing.Size(292, 20);
-            this.txtSellPrice.TabIndex = 10;
+            this.txtSellPrice.TabIndex = 4;
             // 
             // lblSellPrice
             // 
@@ -218,7 +218,7 @@
             this.txtBuyPrice.Location = new System.Drawing.Point(96, 131);
             this.txtBuyPrice.Name = "txtBuyPrice";
             this.txtBuyPrice.Size = new System.Drawing.Size(292, 20);
-            this.txtBuyPrice.TabIndex = 8;
+            this.txtBuyPrice.TabIndex = 3;
             // 
             // lblBuyPrice
             // 
@@ -233,7 +233,7 @@
             this.txtProductMark.Location = new System.Drawing.Point(96, 105);
             this.txtProductMark.Name = "txtProductMark";
             this.txtProductMark.Size = new System.Drawing.Size(292, 20);
-            this.txtProductMark.TabIndex = 6;
+            this.txtProductMark.TabIndex = 2;
             // 
             // lblProductMark
             // 
@@ -248,7 +248,7 @@
             this.txtProductName.Location = new System.Drawing.Point(96, 79);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(292, 20);
-            this.txtProductName.TabIndex = 4;
+            this.txtProductName.TabIndex = 1;
             // 
             // lblProductName
             // 

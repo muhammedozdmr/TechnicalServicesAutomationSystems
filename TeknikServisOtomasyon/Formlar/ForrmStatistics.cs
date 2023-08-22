@@ -33,7 +33,19 @@ namespace TeknikServisOtomasyon.Formlar
             lblBilgisayarStokSayisi.Text = db.TBLURUN.Count(x => x.KATEGORI == 1).ToString();
             lblKucukEvAlet.Text = db.TBLURUN.Count(x => x.KATEGORI == 3).ToString();
             lblMarkaSayisi.Text = (from x in db.TBLURUN select x.MARKA).Distinct().Count().ToString();
+            lblArizaliUrunSayisi.Text=db.TBLURUNKABUL.Count().ToString();
+            lblEnFazlaUrunMarka.Text = db.maksKategori().FirstOrDefault();
 
+
+            /*
+             tadilatı bitmiş ürün
+             kargodaki ürün sayısı
+             en fazla ürün kategorisi
+             beyaz eşya stok sayısı
+             bugün satılan
+             tamirdeki ürün sayısı
+             bugün getirilen ürün
+             */
 
         }
     }

@@ -12,6 +12,7 @@ namespace TeknikServisOtomasyon.Formlar
 {
     public partial class FormCreateProduct : Form
     {
+        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
         public FormCreateProduct()
         {
             InitializeComponent();
@@ -19,8 +20,7 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            FormCreateProduct form = new FormCreateProduct();
-            form.Hide();
+            this.Close();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -32,10 +32,26 @@ namespace TeknikServisOtomasyon.Formlar
             urun.SATISFIYAT = decimal.Parse(txtSellPrice.Text);
             urun.ALISFIYAT = decimal.Parse(txtBuyPrice.Text);
             urun.STOK = short.Parse(txtStock.Text);
-            urun.KATEGORI = byte.Parse(txtCategory.Text);
+            urun.KATEGORI = byte.Parse(cmbDropdown.EditValue.ToString());
             db.TBLURUN.Add(urun);
             db.SaveChanges();
             MessageBox.Show("Ürün başarıylka kaydedildi");
+        }
+
+        private void txtProductName_Click(object sender, EventArgs e)
+        {
+            txtProductName.Text = string.Empty;
+            txtProductName.Focus();
+        }
+
+        private void FormCreateProduct_Load(object sender, EventArgs e)
+        {
+            cmbDropdown.Properties.DataSource = (from x in db.TBLKATEGORI
+                                                 select new
+                                                 {
+                                                     x.ID,
+                                                     x.AD
+                                                 }).ToList();
         }
     }
 }

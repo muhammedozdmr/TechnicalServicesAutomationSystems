@@ -75,6 +75,9 @@
             this.barSaleList = new DevExpress.XtraBars.BarButtonItem();
             this.barArizaliUrunDetay = new DevExpress.XtraBars.BarButtonItem();
             this.barInvoiceList = new DevExpress.XtraBars.BarButtonItem();
+            this.barInfoCompany = new DevExpress.XtraBars.BarButtonItem();
+            this.barMap = new DevExpress.XtraBars.BarButtonItem();
+            this.barReportWizard = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.rbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -100,6 +103,8 @@
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbnContact = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barHomePage = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,9 +156,13 @@
             this.barNewProductSale,
             this.barSaleList,
             this.barArizaliUrunDetay,
-            this.barInvoiceList});
+            this.barInvoiceList,
+            this.barInfoCompany,
+            this.barMap,
+            this.barReportWizard,
+            this.barHomePage});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 61;
+            this.ribbonControl1.MaxItemId = 65;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -547,12 +556,41 @@
             this.barInvoiceList.Name = "barInvoiceList";
             this.barInvoiceList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barInvoiceList_ItemClick);
             // 
+            // barInfoCompany
+            // 
+            resources.ApplyResources(this.barInfoCompany, "barInfoCompany");
+            this.barInfoCompany.Id = 61;
+            this.barInfoCompany.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barInfoCompany.ImageOptions.Image")));
+            this.barInfoCompany.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barInfoCompany.ImageOptions.LargeImage")));
+            this.barInfoCompany.Name = "barInfoCompany";
+            this.barInfoCompany.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barInfoCompany_ItemClick);
+            // 
+            // barMap
+            // 
+            resources.ApplyResources(this.barMap, "barMap");
+            this.barMap.Id = 62;
+            this.barMap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barMap.ImageOptions.Image")));
+            this.barMap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barMap.ImageOptions.LargeImage")));
+            this.barMap.Name = "barMap";
+            this.barMap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barMap_ItemClick);
+            // 
+            // barReportWizard
+            // 
+            resources.ApplyResources(this.barReportWizard, "barReportWizard");
+            this.barReportWizard.Id = 63;
+            this.barReportWizard.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barReportWizard.ImageOptions.Image")));
+            this.barReportWizard.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barReportWizard.ImageOptions.LargeImage")));
+            this.barReportWizard.Name = "barReportWizard";
+            this.barReportWizard.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barReportWizard_ItemClick);
+            // 
             // ribbonMiniToolbar1
             // 
             this.ribbonMiniToolbar1.ParentControl = this;
             // 
             // rbnHomePage
             // 
+            this.rbnHomePage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup17});
             this.rbnHomePage.Name = "rbnHomePage";
             resources.ApplyResources(this.rbnHomePage, "rbnHomePage");
             // 
@@ -693,6 +731,8 @@
             this.ribbonPageGroup6.ItemLinks.Add(this.barCurrencyChange);
             this.ribbonPageGroup6.ItemLinks.Add(this.barWord);
             this.ribbonPageGroup6.ItemLinks.Add(this.barExcel);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barMap);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barInfoCompany);
             this.ribbonPageGroup6.ItemLinks.Add(this.barHelp);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             resources.ApplyResources(this.ribbonPageGroup6, "ribbonPageGroup6");
@@ -706,6 +746,7 @@
             // 
             // ribbonPageGroup7
             // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.barReportWizard);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             resources.ApplyResources(this.ribbonPageGroup7, "ribbonPageGroup7");
             // 
@@ -738,6 +779,20 @@
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
             resources.ApplyResources(this.ribbonPageGroup16, "ribbonPageGroup16");
             // 
+            // ribbonPageGroup17
+            // 
+            this.ribbonPageGroup17.ItemLinks.Add(this.barHomePage);
+            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
+            // 
+            // barHomePage
+            // 
+            resources.ApplyResources(this.barHomePage, "barHomePage");
+            this.barHomePage.Id = 64;
+            this.barHomePage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barHomePage.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barHomePage.Name = "barHomePage";
+            this.barHomePage.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barHomePage_ItemClick);
+            // 
             // TeknikServisForm
             // 
             this.AllowMdiBar = true;
@@ -748,6 +803,7 @@
             this.KeyPreview = true;
             this.Name = "TeknikServisForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.TeknikServisForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -828,6 +884,11 @@
         private DevExpress.XtraBars.BarButtonItem barSaleList;
         private DevExpress.XtraBars.BarButtonItem barArizaliUrunDetay;
         private DevExpress.XtraBars.BarButtonItem barInvoiceList;
+        private DevExpress.XtraBars.BarButtonItem barInfoCompany;
+        private DevExpress.XtraBars.BarButtonItem barMap;
+        private DevExpress.XtraBars.BarButtonItem barReportWizard;
+        private DevExpress.XtraBars.BarButtonItem barHomePage;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
     }
 }
 

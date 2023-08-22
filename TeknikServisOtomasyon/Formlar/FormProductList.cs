@@ -68,12 +68,21 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtProductID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
-            txtProductName.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
-            txtProductMark.Text = gridView1.GetFocusedRowCellValue("MARKA").ToString();
-            txtBuyPrice.Text = gridView1.GetFocusedRowCellValue("ALISFIYAT").ToString();
-            txtSellPrice.Text = gridView1.GetFocusedRowCellValue("SATISFIYAT").ToString();
-            txtStock.Text = gridView1.GetFocusedRowCellValue("STOK").ToString();
+            try
+            {
+                txtProductID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+                txtProductName.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
+                txtProductMark.Text = gridView1.GetFocusedRowCellValue("MARKA").ToString();
+                txtBuyPrice.Text = gridView1.GetFocusedRowCellValue("ALISFIYAT").ToString();
+                txtSellPrice.Text = gridView1.GetFocusedRowCellValue("SATISFIYAT").ToString();
+                txtStock.Text = gridView1.GetFocusedRowCellValue("STOK").ToString();
+                cmbCategory.Text = gridView1.GetFocusedRowCellValue("KATEGORI").ToString();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
@@ -82,7 +91,7 @@ namespace TeknikServisOtomasyon.Formlar
             var deger = db.TBLURUN.Find(id);
             db.TBLURUN.Remove(deger);
             db.SaveChanges();
-            MessageBox.Show("Ürün başarıyla silindi !","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            MessageBox.Show("Ürün başarıyla silindi !", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             FormListRefresh();
         }
 

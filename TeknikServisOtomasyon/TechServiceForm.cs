@@ -53,7 +53,7 @@ namespace TeknikServisOtomasyon
 
         private void barNewCategory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FormCreateCategory formCreateCategory = new Formlar.FormCreateCategory();  
+            Formlar.FormCreateCategory formCreateCategory = new Formlar.FormCreateCategory();
             formCreateCategory.MdiParent = this;
             formCreateCategory.Show();
         }
@@ -121,7 +121,7 @@ namespace TeknikServisOtomasyon
 
         private void barCurrency_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FormCurrencies formCurrencies= new Formlar.FormCurrencies();
+            Formlar.FormCurrencies formCurrencies = new Formlar.FormCurrencies();
             formCurrencies.MdiParent = this;
             formCurrencies.Show();
         }
@@ -152,7 +152,7 @@ namespace TeknikServisOtomasyon
 
         private void barBrokenProductList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FormArizaListesi formAriza= new Formlar.FormArizaListesi();
+            Formlar.FormArizaListesi formAriza = new Formlar.FormArizaListesi();
             formAriza.MdiParent = this;
             formAriza.Show();
         }
@@ -166,7 +166,7 @@ namespace TeknikServisOtomasyon
 
         private void barNewBrokenProduct_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FormBrokeProductSave formBroken= new Formlar.FormBrokeProductSave();
+            Formlar.FormBrokeProductSave formBroken = new Formlar.FormBrokeProductSave();
             //formSale.MdiParent = this;
             formBroken.Show();
         }
@@ -209,6 +209,49 @@ namespace TeknikServisOtomasyon
             Formlar.FormFaturaKalemDetaylari formFaturaKalemDetay = new Formlar.FormFaturaKalemDetaylari();
             formFaturaKalemDetay.MdiParent = this;
             formFaturaKalemDetay.Show();
+        }
+
+        private void barInfoCompany_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormMap formGauge = new Formlar.FormMap();
+            formGauge.MdiParent = this;
+            formGauge.Show();
+        }
+
+        private void barMap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FormMap formMap = new Formlar.FormMap();
+            formMap.MdiParent = this;
+            formMap.Show();
+        }
+
+        private void barReportWizard_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+            Formlar.FormRapor formRapor = new Formlar.FormRapor();
+            //formRapor.MdiParent = this;
+            formRapor.Show();
+        }
+
+        Formlar.FormHomePage formHomePage;
+        private void TeknikServisForm_Load(object sender, EventArgs e)
+        {
+            if (formHomePage == null || formHomePage.IsDisposed)
+            {
+                formHomePage = new Formlar.FormHomePage();
+                formHomePage.MdiParent = this;
+                formHomePage.Show();
+            }
+        }
+
+        private void barHomePage_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (formHomePage == null || formHomePage.IsDisposed)
+            {
+                formHomePage = new Formlar.FormHomePage();
+                formHomePage.MdiParent = this;
+                formHomePage.Show();
+            }
         }
     }
 }

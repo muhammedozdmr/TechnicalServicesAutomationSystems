@@ -12,6 +12,8 @@ namespace TeknikServisOtomasyon
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DbTeknikServisEntities1 : DbContext
     {
@@ -42,5 +44,20 @@ namespace TeknikServisOtomasyon
         public virtual DbSet<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
         public virtual DbSet<TBLHAKKIMIZDA> TBLHAKKIMIZDA { get; set; }
         public virtual DbSet<TBLILETISIM> TBLILETISIM { get; set; }
+    
+        public virtual ObjectResult<urunkategori_Result> urunkategori()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<urunkategori_Result>("urunkategori");
+        }
+    
+        public virtual ObjectResult<string> maksKategori()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("maksKategori");
+        }
+    
+        public virtual ObjectResult<string> maksUrunMarka()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("maksUrunMarka");
+        }
     }
 }
