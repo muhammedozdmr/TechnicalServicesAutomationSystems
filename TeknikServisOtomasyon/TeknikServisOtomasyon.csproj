@@ -285,6 +285,12 @@
     <Compile Include="Formlar\ForrmStatistics.Designer.cs">
       <DependentUpon>ForrmStatistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -481,6 +487,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\ForrmStatistics.resx">
       <DependentUpon>ForrmStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Raporlar\XtraReport1.resx">
       <DependentUpon>XtraReport1.cs</DependentUpon>
