@@ -55,6 +55,11 @@ namespace TeknikServisOtomasyon.Formlar
                                  u.ACIKLAMA
                              };
             gridList.DataSource = department.ToList();
+            lblEnCokDepartman.Text = (from departman in db.TBLDEPARTMAN
+                                      join personel in db.TBLPERSONEL on departman.ID equals personel.DEPARTMAN
+                                      group departman by departman.AD into p
+                                      orderby p.Count() descending
+                                      select p.Key).FirstOrDefault().ToString();
             lblCountDeparment.Text = db.TBLDEPARTMAN.Count().ToString();
             labelControl6.Text = db.TBLPERSONEL.Count().ToString();
         }

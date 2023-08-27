@@ -401,6 +401,7 @@
             this.cmbDeparment.Name = "cmbDeparment";
             this.cmbDeparment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbDeparment.Properties.NullText = "DEPARTMAN";
             this.cmbDeparment.Size = new System.Drawing.Size(294, 20);
             this.cmbDeparment.TabIndex = 32;
             // 

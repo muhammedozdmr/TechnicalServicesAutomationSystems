@@ -51,6 +51,8 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.dateCreate = new System.Windows.Forms.DateTimePicker();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtInfo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupProduct)).BeginInit();
@@ -90,7 +92,7 @@
             // btnList
             // 
             this.btnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnList.ImageOptions.Image")));
-            this.btnList.Location = new System.Drawing.Point(108, 301);
+            this.btnList.Location = new System.Drawing.Point(108, 326);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(292, 38);
             this.btnList.TabIndex = 18;
@@ -100,7 +102,7 @@
             // btnUpdate
             // 
             this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
-            this.btnUpdate.Location = new System.Drawing.Point(107, 257);
+            this.btnUpdate.Location = new System.Drawing.Point(107, 282);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(292, 38);
             this.btnUpdate.TabIndex = 17;
@@ -110,7 +112,7 @@
             // btnClear
             // 
             this.btnClear.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.ImageOptions.Image")));
-            this.btnClear.Location = new System.Drawing.Point(108, 345);
+            this.btnClear.Location = new System.Drawing.Point(108, 370);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(292, 38);
             this.btnClear.TabIndex = 22;
@@ -118,6 +120,8 @@
             // 
             // groupProduct
             // 
+            this.groupProduct.Controls.Add(this.labelControl1);
+            this.groupProduct.Controls.Add(this.dateCreate);
             this.groupProduct.Controls.Add(this.chkStatus);
             this.groupProduct.Controls.Add(this.labelControl3);
             this.groupProduct.Controls.Add(this.txtInfo);
@@ -139,7 +143,7 @@
             // 
             // chkStatus
             // 
-            this.chkStatus.Location = new System.Drawing.Point(107, 134);
+            this.chkStatus.Location = new System.Drawing.Point(107, 159);
             this.chkStatus.Name = "chkStatus";
             this.chkStatus.Properties.Caption = "Okundu Olarak İşaretle";
             this.chkStatus.Size = new System.Drawing.Size(144, 20);
@@ -147,7 +151,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(52, 134);
+            this.labelControl3.Location = new System.Drawing.Point(52, 159);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(40, 13);
             this.labelControl3.TabIndex = 24;
@@ -156,7 +160,7 @@
             // btnDelete
             // 
             this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(107, 213);
+            this.btnDelete.Location = new System.Drawing.Point(107, 238);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(292, 38);
             this.btnDelete.TabIndex = 16;
@@ -165,7 +169,7 @@
             // btnSave
             // 
             this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
-            this.btnSave.Location = new System.Drawing.Point(107, 169);
+            this.btnSave.Location = new System.Drawing.Point(107, 194);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(292, 38);
             this.btnSave.TabIndex = 15;
@@ -258,6 +262,21 @@
             this.labelControl6.TabIndex = 25;
             this.labelControl6.Text = "Okunan Notlar:";
             // 
+            // dateCreate
+            // 
+            this.dateCreate.Location = new System.Drawing.Point(108, 133);
+            this.dateCreate.Name = "dateCreate";
+            this.dateCreate.Size = new System.Drawing.Size(292, 21);
+            this.dateCreate.TabIndex = 26;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(53, 137);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(35, 13);
+            this.labelControl1.TabIndex = 27;
+            this.labelControl1.Text = "TARİH:";
+            // 
             // FormNotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,5 +330,7 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.DateTimePicker dateCreate;
     }
 }

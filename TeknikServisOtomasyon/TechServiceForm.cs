@@ -143,11 +143,16 @@ namespace TeknikServisOtomasyon
             formYoutube.Show();
         }
 
+        Formlar.FormNotes formNotes;
         private void barAjanda_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FormNotes formNotes = new Formlar.FormNotes();
-            formNotes.MdiParent = this;
-            formNotes.Show();
+            //Yalnızca 1 defa açılsın
+            if (formNotes == null || formNotes.IsDisposed)
+            {
+                formNotes = new Formlar.FormNotes();
+                formNotes.MdiParent = this;
+                formNotes.Show();
+            }
         }
 
         private void barBrokenProductList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -33,7 +33,7 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.lblEnCokDepartman = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -59,8 +59,8 @@
             this.txtProductName = new DevExpress.XtraEditors.TextEdit();
             this.lblProductName = new DevExpress.XtraEditors.LabelControl();
             this.groupProduct = new DevExpress.XtraEditors.GroupControl();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnClear = new DevExpress.XtraEditors.SimpleButton();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
@@ -93,37 +93,37 @@
             // pictureEdit3
             // 
             this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(163, 46);
+            this.pictureEdit3.Location = new System.Drawing.Point(240, 70);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Size = new System.Drawing.Size(97, 97);
+            this.pictureEdit3.Size = new System.Drawing.Size(76, 73);
             this.pictureEdit3.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(50)))));
             this.panel3.Controls.Add(this.pictureEdit3);
-            this.panel3.Controls.Add(this.labelControl8);
+            this.panel3.Controls.Add(this.lblEnCokDepartman);
             this.panel3.Controls.Add(this.labelControl9);
             this.panel3.Location = new System.Drawing.Point(733, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(341, 158);
             this.panel3.TabIndex = 14;
             // 
-            // labelControl8
+            // lblEnCokDepartman
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl8.Appearance.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(83, 48);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(60, 39);
-            this.labelControl8.TabIndex = 1;
-            this.labelControl8.Text = "100";
+            this.lblEnCokDepartman.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEnCokDepartman.Appearance.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblEnCokDepartman.Appearance.Options.UseFont = true;
+            this.lblEnCokDepartman.Appearance.Options.UseForeColor = true;
+            this.lblEnCokDepartman.Location = new System.Drawing.Point(34, 56);
+            this.lblEnCokDepartman.Name = "lblEnCokDepartman";
+            this.lblEnCokDepartman.Size = new System.Drawing.Size(60, 39);
+            this.lblEnCokDepartman.TabIndex = 1;
+            this.lblEnCokDepartman.Text = "100";
             // 
             // pictureEdit2
             // 
@@ -179,7 +179,7 @@
             // 
             // btnList
             // 
-            this.btnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnProductList.ImageOptions.Image")));
+            this.btnList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnList.ImageOptions.Image")));
             this.btnList.Location = new System.Drawing.Point(107, 353);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(292, 38);
@@ -189,7 +189,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateProduct.ImageOptions.Image")));
+            this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
             this.btnUpdate.Location = new System.Drawing.Point(106, 309);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(292, 38);
@@ -211,7 +211,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteProduct.ImageOptions.Image")));
+            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
             this.btnDelete.Location = new System.Drawing.Point(106, 265);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(292, 38);
@@ -233,7 +233,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveProduct.ImageOptions.Image")));
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.Location = new System.Drawing.Point(106, 221);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(292, 38);
@@ -384,6 +384,16 @@
             this.groupProduct.TabIndex = 10;
             this.groupProduct.Text = "DEPARTMAN İŞLEMLERİ";
             // 
+            // btnClear
+            // 
+            this.btnClear.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.ImageOptions.Image")));
+            this.btnClear.Location = new System.Drawing.Point(107, 397);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(292, 38);
+            this.btnClear.TabIndex = 22;
+            this.btnClear.Text = "TEMİZLE";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(106, 108);
@@ -391,16 +401,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(292, 96);
             this.richTextBox1.TabIndex = 21;
             this.richTextBox1.Text = "";
-            // 
-            // btnClear
-            // 
-            this.btnClear.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnClear.Location = new System.Drawing.Point(107, 397);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(292, 38);
-            this.btnClear.TabIndex = 22;
-            this.btnClear.Text = "TEMİZLE";
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // FormDeparmentList
             // 
@@ -445,7 +445,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl lblEnCokDepartman;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl7;

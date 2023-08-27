@@ -30,6 +30,7 @@ namespace TeknikServisOtomasyon.Formlar
             TBLNOTLARIM t = new TBLNOTLARIM();
             t.BASLIK = txtTitle.Text;
             t.ICERIK = txtInfo.Text;
+            t.TARIH = dateCreate.Value;
             t.DURUM = false;
             db.TBLNOTLARIM.Add(t);
             db.SaveChanges();
