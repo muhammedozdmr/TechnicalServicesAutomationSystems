@@ -258,5 +258,35 @@ namespace TeknikServisOtomasyon
                 formHomePage.Show();
             }
         }
+        İletişim.FormRehber rehberForm;
+        private void barContacts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (rehberForm == null || rehberForm.IsDisposed)
+            {
+                rehberForm = new İletişim.FormRehber();
+                rehberForm.MdiParent = this;
+                rehberForm.Show();
+            }
+        }
+        İletişim.FormMesajlar formMesajlar;
+        private void barMailBox_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (formMesajlar == null || formMesajlar.IsDisposed)
+            {
+                formMesajlar = new İletişim.FormMesajlar();
+                formMesajlar.MdiParent = this;
+                formMesajlar.Show();
+            }
+        }
+        İletişim.FormMailGonder formMailGonder;
+        private void barNewMail_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (formMailGonder == null || formMailGonder.IsDisposed)
+            {
+                formMailGonder = new İletişim.FormMailGonder();
+                //formMailGonder.MdiParent = this;
+                formMailGonder.Show();
+            }
+        }
     }
 }

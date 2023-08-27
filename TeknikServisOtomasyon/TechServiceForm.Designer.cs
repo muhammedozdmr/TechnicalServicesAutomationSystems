@@ -78,8 +78,10 @@
             this.barInfoCompany = new DevExpress.XtraBars.BarButtonItem();
             this.barMap = new DevExpress.XtraBars.BarButtonItem();
             this.barReportWizard = new DevExpress.XtraBars.BarButtonItem();
+            this.barHomePage = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.rbnHomePage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbnProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -103,8 +105,6 @@
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbnContact = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barHomePage = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -479,6 +479,7 @@
             this.barContacts.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barContacts.ImageOptions.Image")));
             this.barContacts.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barContacts.ImageOptions.LargeImage")));
             this.barContacts.Name = "barContacts";
+            this.barContacts.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barContacts_ItemClick);
             // 
             // barMailBox
             // 
@@ -487,6 +488,7 @@
             this.barMailBox.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barMailBox.ImageOptions.Image")));
             this.barMailBox.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barMailBox.ImageOptions.LargeImage")));
             this.barMailBox.Name = "barMailBox";
+            this.barMailBox.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barMailBox_ItemClick);
             // 
             // barNewMail
             // 
@@ -495,6 +497,7 @@
             this.barNewMail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barNewMail.ImageOptions.Image")));
             this.barNewMail.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barNewMail.ImageOptions.LargeImage")));
             this.barNewMail.Name = "barNewMail";
+            this.barNewMail.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barNewMail_ItemClick);
             // 
             // barSendSMS
             // 
@@ -583,6 +586,15 @@
             this.barReportWizard.Name = "barReportWizard";
             this.barReportWizard.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barReportWizard_ItemClick);
             // 
+            // barHomePage
+            // 
+            resources.ApplyResources(this.barHomePage, "barHomePage");
+            this.barHomePage.Id = 64;
+            this.barHomePage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barHomePage.ImageOptions.Image")));
+            this.barHomePage.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barHomePage.ImageOptions.LargeImage")));
+            this.barHomePage.Name = "barHomePage";
+            this.barHomePage.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barHomePage_ItemClick);
+            // 
             // ribbonMiniToolbar1
             // 
             this.ribbonMiniToolbar1.ParentControl = this;
@@ -593,6 +605,11 @@
             this.ribbonPageGroup17});
             this.rbnHomePage.Name = "rbnHomePage";
             resources.ApplyResources(this.rbnHomePage, "rbnHomePage");
+            // 
+            // ribbonPageGroup17
+            // 
+            this.ribbonPageGroup17.ItemLinks.Add(this.barHomePage);
+            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
             // 
             // rbnProducts
             // 
@@ -610,7 +627,6 @@
             this.ribbonPageGroup2.ItemLinks.Add(this.barCategoryList);
             this.ribbonPageGroup2.ItemLinks.Add(this.barNewCategory);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
             // 
             // ribbonPageGroup11
             // 
@@ -618,14 +634,12 @@
             this.ribbonPageGroup11.ItemLinks.Add(this.barNewProduct);
             this.ribbonPageGroup11.ItemLinks.Add(this.barSearchProduct);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            resources.ApplyResources(this.ribbonPageGroup11, "ribbonPageGroup11");
             // 
             // ribbonPageGroup12
             // 
             this.ribbonPageGroup12.ItemLinks.Add(this.barProductStatistics);
             this.ribbonPageGroup12.ItemLinks.Add(this.barMarkStatistics);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            resources.ApplyResources(this.ribbonPageGroup12, "ribbonPageGroup12");
             // 
             // ribbonPageGroup13
             // 
@@ -634,14 +648,12 @@
             this.ribbonPageGroup13.ItemLinks.Add(this.barBrokenProductInfo);
             this.ribbonPageGroup13.ItemLinks.Add(this.barArizaliUrunDetay);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
-            resources.ApplyResources(this.ribbonPageGroup13, "ribbonPageGroup13");
             // 
             // ribbonPageGroup14
             // 
             this.ribbonPageGroup14.ItemLinks.Add(this.barCreateQR);
             this.ribbonPageGroup14.ItemLinks.Add(this.barCreateBarcode);
             this.ribbonPageGroup14.Name = "ribbonPageGroup14";
-            resources.ApplyResources(this.ribbonPageGroup14, "ribbonPageGroup14");
             // 
             // rbnCustomers
             // 
@@ -657,14 +669,12 @@
             this.ribbonPageGroup3.ItemLinks.Add(this.barCustomerList);
             this.ribbonPageGroup3.ItemLinks.Add(this.barCustomerCityStatistics);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            resources.ApplyResources(this.ribbonPageGroup3, "ribbonPageGroup3");
             // 
             // ribbonPageGroup9
             // 
             this.ribbonPageGroup9.ItemLinks.Add(this.barNewProductSale);
             this.ribbonPageGroup9.ItemLinks.Add(this.barSaleList);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            resources.ApplyResources(this.ribbonPageGroup9, "ribbonPageGroup9");
             // 
             // rbnInvoice
             // 
@@ -679,7 +689,6 @@
             this.ribbonPageGroup4.ItemLinks.Add(this.barCustomerActions);
             this.ribbonPageGroup4.ItemLinks.Add(this.barEmployeeActions);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            resources.ApplyResources(this.ribbonPageGroup4, "ribbonPageGroup4");
             // 
             // ribbonPageGroup1
             // 
@@ -690,7 +699,6 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barConvertToPdf);
             this.ribbonPageGroup1.ItemLinks.Add(this.barInactiveInvoice);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
             // 
             // rbnEmployee
             // 
@@ -705,14 +713,12 @@
             this.ribbonPageGroup5.ItemLinks.Add(this.barEmployeeList);
             this.ribbonPageGroup5.ItemLinks.Add(this.barNewEmployee);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            resources.ApplyResources(this.ribbonPageGroup5, "ribbonPageGroup5");
             // 
             // ribbonPageGroup15
             // 
             this.ribbonPageGroup15.ItemLinks.Add(this.barDepartmantList);
             this.ribbonPageGroup15.ItemLinks.Add(this.barNewDepartmant);
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
-            resources.ApplyResources(this.ribbonPageGroup15, "ribbonPageGroup15");
             // 
             // rbnTools
             // 
@@ -735,7 +741,6 @@
             this.ribbonPageGroup6.ItemLinks.Add(this.barInfoCompany);
             this.ribbonPageGroup6.ItemLinks.Add(this.barHelp);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            resources.ApplyResources(this.ribbonPageGroup6, "ribbonPageGroup6");
             // 
             // rbnReports
             // 
@@ -748,7 +753,6 @@
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.barReportWizard);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            resources.ApplyResources(this.ribbonPageGroup7, "ribbonPageGroup7");
             // 
             // rbnStatics
             // 
@@ -761,7 +765,6 @@
             // 
             this.ribbonPageGroup10.ItemLinks.Add(this.barCards);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            resources.ApplyResources(this.ribbonPageGroup10, "ribbonPageGroup10");
             // 
             // rbnContact
             // 
@@ -777,21 +780,6 @@
             this.ribbonPageGroup16.ItemLinks.Add(this.barNewMail);
             this.ribbonPageGroup16.ItemLinks.Add(this.barSendSMS);
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
-            resources.ApplyResources(this.ribbonPageGroup16, "ribbonPageGroup16");
-            // 
-            // ribbonPageGroup17
-            // 
-            this.ribbonPageGroup17.ItemLinks.Add(this.barHomePage);
-            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
-            // 
-            // barHomePage
-            // 
-            resources.ApplyResources(this.barHomePage, "barHomePage");
-            this.barHomePage.Id = 64;
-            this.barHomePage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barHomePage.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barHomePage.Name = "barHomePage";
-            this.barHomePage.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barHomePage_ItemClick);
             // 
             // TeknikServisForm
             // 

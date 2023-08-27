@@ -374,6 +374,24 @@
     <Compile Include="urunkategori_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="İletişim\FormMailGonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İletişim\FormMailGonder.Designer.cs">
+      <DependentUpon>FormMailGonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İletişim\FormMesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İletişim\FormMesajlar.Designer.cs">
+      <DependentUpon>FormMesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İletişim\FormRehber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İletişim\FormRehber.Designer.cs">
+      <DependentUpon>FormRehber.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Formlar\FormArizaDetaylar.resx">
       <DependentUpon>FormArizaDetaylar.cs</DependentUpon>
     </EmbeddedResource>
@@ -484,6 +502,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="İletişim\FormMailGonder.resx">
+      <DependentUpon>FormMailGonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İletişim\FormMesajlar.resx">
+      <DependentUpon>FormMesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İletişim\FormRehber.resx">
+      <DependentUpon>FormRehber.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
