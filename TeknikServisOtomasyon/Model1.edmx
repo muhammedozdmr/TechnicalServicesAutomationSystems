@@ -101,6 +101,17 @@
           <Property Name="ID" Type="tinyint" Nullable="false" />
           <Property Name="METIN" Type="varchar" MaxLength="1000" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DbTeknikServis.dbo.TBLILCELER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="TBLILCELER">
+          <Key>
+            <PropertyRef Name="ilce_no" />
+            <PropertyRef Name="il_no" />
+          </Key>
+          <Property Name="ilce_no" Type="int" Nullable="false" />
+          <Property Name="isim" Type="varchar" MaxLength="50" />
+          <Property Name="il_no" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="TBLILETISIM">
           <Key>
             <PropertyRef Name="ID" />
@@ -110,6 +121,13 @@
           <Property Name="MAIL" Type="varchar" MaxLength="100" />
           <Property Name="KONU" Type="varchar" MaxLength="100" />
           <Property Name="MESAJ" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="TBLILLER">
+          <Key>
+            <PropertyRef Name="il_no" />
+          </Key>
+          <Property Name="il_no" Type="int" Nullable="false" />
+          <Property Name="isim" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="TBLKATEGORI">
           <Key>
@@ -176,6 +194,8 @@
           <Property Name="GELISTARIHI" Type="smalldatetime" />
           <Property Name="CIKISTARIHI" Type="smalldatetime" />
           <Property Name="URUNSERINO" Type="char" MaxLength="10" />
+          <Property Name="URUNDURUM" Type="bit" />
+          <Property Name="URUNDURUMDETAY" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="TBLURUNTAKIP">
           <Key>
@@ -186,6 +206,18 @@
           <Property Name="SERINO" Type="char" MaxLength="5" />
           <Property Name="TARIH" Type="smalldatetime" />
         </EntityType>
+        <Association Name="fk_il_no">
+          <End Role="TBLILLER" Type="Self.TBLILLER" Multiplicity="1" />
+          <End Role="TBLILCELER" Type="Self.TBLILCELER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBLILLER">
+              <PropertyRef Name="il_no" />
+            </Principal>
+            <Dependent Role="TBLILCELER">
+              <PropertyRef Name="il_no" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_TBLFATURABILGI_TBLCARI">
           <End Role="TBLCARI" Type="Self.TBLCARI" Multiplicity="0..1" />
           <End Role="TBLFATURABILGI" Type="Self.TBLFATURABILGI" Multiplicity="*" />
@@ -320,6 +352,7 @@
           <EntitySet Name="TBLGIDERTABLOSU" EntityType="Self.TBLGIDERTABLOSU" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLHAKKIMIZDA" EntityType="Self.TBLHAKKIMIZDA" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLILETISIM" EntityType="Self.TBLILETISIM" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLILLER" EntityType="Self.TBLILLER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLKATEGORI" EntityType="Self.TBLKATEGORI" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLNOTLARIM" EntityType="Self.TBLNOTLARIM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLPERSONEL" EntityType="Self.TBLPERSONEL" Schema="dbo" store:Type="Tables" />
@@ -327,6 +360,17 @@
           <EntitySet Name="TBLURUNHAREKET" EntityType="Self.TBLURUNHAREKET" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLURUNKABUL" EntityType="Self.TBLURUNKABUL" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLURUNTAKIP" EntityType="Self.TBLURUNTAKIP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLILCELER" EntityType="Self.TBLILCELER" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [TBLILCELER].[ilce_no] AS [ilce_no], 
+    [TBLILCELER].[isim] AS [isim], 
+    [TBLILCELER].[il_no] AS [il_no]
+    FROM [dbo].[TBLILCELER] AS [TBLILCELER]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="fk_il_no" Association="Self.fk_il_no">
+            <End Role="TBLILLER" EntitySet="TBLILLER" />
+            <End Role="TBLILCELER" EntitySet="TBLILCELER" />
+          </AssociationSet>
           <AssociationSet Name="FK_TBLFATURABILGI_TBLCARI" Association="Self.FK_TBLFATURABILGI_TBLCARI">
             <End Role="TBLCARI" EntitySet="TBLCARI" />
             <End Role="TBLFATURABILGI" EntitySet="TBLFATURABILGI" />
@@ -546,6 +590,8 @@
           <Property Name="URUNSERINO" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
           <NavigationProperty Name="TBLCARI" Relationship="Self.FK_TBLURUNKABUL_TBLCARI" FromRole="TBLURUNKABUL" ToRole="TBLCARI" />
           <NavigationProperty Name="TBLPERSONEL" Relationship="Self.FK_TBLURUNKABUL_TBLPERSONEL" FromRole="TBLURUNKABUL" ToRole="TBLPERSONEL" />
+          <Property Name="URUNDURUM" Type="Boolean" />
+          <Property Name="URUNDURUMDETAY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TBLURUNTAKIP">
           <Key>
@@ -737,6 +783,12 @@
           <FunctionImport Name="urunkategori" ReturnType="Collection(DbTeknikServisModel.urunkategori_Result)" />
           <FunctionImport Name="maksKategori" ReturnType="Collection(String)" />
           <FunctionImport Name="maksUrunMarka" ReturnType="Collection(String)" />
+          <EntitySet Name="TBLILLER" EntityType="DbTeknikServisModel.TBLILLER" />
+          <EntitySet Name="TBLILCELER" EntityType="DbTeknikServisModel.TBLILCELER" />
+          <AssociationSet Name="fk_il_no" Association="DbTeknikServisModel.fk_il_no">
+            <End Role="TBLILLER" EntitySet="TBLILLER" />
+            <End Role="TBLILCELER" EntitySet="TBLILCELER" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="TBLHAKKIMIZDA">
           <Key>
@@ -759,6 +811,36 @@
           <Property Type="String" Name="AD" Nullable="true" MaxLength="30" />
           <Property Type="Int32" Name="ADET" Nullable="true" />
         </ComplexType>
+        <EntityType Name="TBLILLER">
+          <Key>
+            <PropertyRef Name="il_no" />
+          </Key>
+          <Property Name="il_no" Type="Int32" Nullable="false" />
+          <Property Name="isim" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TBLILCELER" Relationship="DbTeknikServisModel.fk_il_no" FromRole="TBLILLER" ToRole="TBLILCELER" />
+        </EntityType>
+        <EntityType Name="TBLILCELER">
+          <Key>
+            <PropertyRef Name="ilce_no" />
+            <PropertyRef Name="il_no" />
+          </Key>
+          <Property Name="ilce_no" Type="Int32" Nullable="false" />
+          <Property Name="isim" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="il_no" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TBLILLER" Relationship="DbTeknikServisModel.fk_il_no" FromRole="TBLILCELER" ToRole="TBLILLER" />
+        </EntityType>
+        <Association Name="fk_il_no">
+          <End Type="DbTeknikServisModel.TBLILLER" Role="TBLILLER" Multiplicity="1" />
+          <End Type="DbTeknikServisModel.TBLILCELER" Role="TBLILCELER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBLILLER">
+              <PropertyRef Name="il_no" />
+            </Principal>
+            <Dependent Role="TBLILCELER">
+              <PropertyRef Name="il_no" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -925,6 +1007,8 @@
           <EntitySetMapping Name="TBLURUNKABUL">
             <EntityTypeMapping TypeName="DbTeknikServisModel.TBLURUNKABUL">
               <MappingFragment StoreEntitySet="TBLURUNKABUL">
+                <ScalarProperty Name="URUNDURUMDETAY" ColumnName="URUNDURUMDETAY" />
+                <ScalarProperty Name="URUNDURUM" ColumnName="URUNDURUM" />
                 <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
                 <ScalarProperty Name="CARI" ColumnName="CARI" />
                 <ScalarProperty Name="PERSONEL" ColumnName="PERSONEL" />
@@ -973,6 +1057,23 @@
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="maksKategori" FunctionName="DbTeknikServisModel.Store.maksKategori" />
           <FunctionImportMapping FunctionImportName="maksUrunMarka" FunctionName="DbTeknikServisModel.Store.maksUrunMarka" />
+          <EntitySetMapping Name="TBLILLER">
+            <EntityTypeMapping TypeName="DbTeknikServisModel.TBLILLER">
+              <MappingFragment StoreEntitySet="TBLILLER">
+                <ScalarProperty Name="isim" ColumnName="isim" />
+                <ScalarProperty Name="il_no" ColumnName="il_no" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLILCELER">
+            <EntityTypeMapping TypeName="DbTeknikServisModel.TBLILCELER">
+              <MappingFragment StoreEntitySet="TBLILCELER">
+                <ScalarProperty Name="il_no" ColumnName="il_no" />
+                <ScalarProperty Name="isim" ColumnName="isim" />
+                <ScalarProperty Name="ilce_no" ColumnName="ilce_no" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

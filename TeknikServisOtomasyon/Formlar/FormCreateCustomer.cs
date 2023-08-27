@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraRichEdit.API.RichTextBox;
+﻿using DevExpress.XtraEditors;
+using DevExpress.XtraRichEdit.API.RichTextBox;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,8 +25,8 @@ namespace TeknikServisOtomasyon.Formlar
             TBLCARI t = new TBLCARI();
             t.AD = txtName.Text;
             t.SOYAD = txtSurname.Text;
-            t.IL = txtCity.Text;
-            t.ILCE = txtTown.Text;
+            t.IL = cmbCity.Text;
+            t.ILCE = cmbTown.Text;
             t.ADRES = txtAddress.Text;
             t.BANKA = txtBank.Text;
 
@@ -41,13 +42,15 @@ namespace TeknikServisOtomasyon.Formlar
 
         private void FormCreateCustomer_Load(object sender, EventArgs e)
         {
+            cmbCity.Properties.DataSource = (from x in db.TBLILLER
+                                             select new
+                                             {
+                                                 x.il_no,
+                                                 x.isim
+                                             }).ToList();
+            
             btnCancel.Click += btnCancel_Click;
             cancelButton.Click += btnCancel_Click;
-        }
-
-        private void cancelButton_EditValueChanged(object sender, EventArgs e)
-        {
-            this.Close();
         }
         private void ClearForm()
         {
@@ -60,8 +63,36 @@ namespace TeknikServisOtomasyon.Formlar
             txtTaxDepartment.Text = string.Empty;
             txtTaxNo.Text = string.Empty;
             txtAddress.Text = string.Empty;
-            txtCity.Text = string.Empty;
-            txtTown.Text = string.Empty;
+            cmbCity.Properties.DataSource = (from x in db.TBLILLER
+                                             select new
+                                             {
+                                                 x.il_no,
+                                                 x.isim
+                                             }).ToList();
+            cmbTown.Properties.DataSource = (from x in db.TBLILCELER
+                                             select new
+                                             {
+                                                 x.ilce_no,
+                                                 x.isim,
+                                                 x.il_no
+                                             }).ToList();
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cmbCity_EditValueChanged(object sender, EventArgs e)
+        {
+            var secilen = int.Parse(cmbCity.EditValue.ToString());
+            cmbTown.Properties.DataSource = (from x in db.TBLILCELER
+                                                 select new
+                                                 {
+                                                     x.ilce_no,
+                                                     x.isim,
+                                                     x.il_no
+                                                 }).Where(y => y.il_no == secilen).ToList();
         }
     }
 }

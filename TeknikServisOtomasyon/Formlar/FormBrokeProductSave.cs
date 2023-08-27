@@ -74,8 +74,11 @@ namespace TeknikServisOtomasyon.Formlar
             t.GELISTARIHI = dateProduct.Value;
             t.PERSONEL = (short)cmbPersonal.SelectedValue;
             t.URUNSERINO = txtSeriNo.Text;
+            t.URUNDURUMDETAY = "Ürün Kaydoldu";
+
             db.TBLURUNKABUL.Add(t);
             db.SaveChanges();
+
             MessageBox.Show("Ürün arıza girişi yapıldı.");
         }
 

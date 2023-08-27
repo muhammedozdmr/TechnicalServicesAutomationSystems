@@ -44,6 +44,8 @@ namespace TeknikServisOtomasyon
         public virtual DbSet<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
         public virtual DbSet<TBLHAKKIMIZDA> TBLHAKKIMIZDA { get; set; }
         public virtual DbSet<TBLILETISIM> TBLILETISIM { get; set; }
+        public virtual DbSet<TBLILLER> TBLILLER { get; set; }
+        public virtual DbSet<TBLILCELER> TBLILCELER { get; set; }
     
         public virtual ObjectResult<urunkategori_Result> urunkategori()
         {

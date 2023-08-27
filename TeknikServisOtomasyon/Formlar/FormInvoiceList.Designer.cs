@@ -282,6 +282,7 @@
             this.gridView1.Appearance.Row.Options.UseBorderColor = true;
             this.gridView1.GridControl = this.gridList;
             this.gridView1.Name = "gridView1";
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // FormInvoiceList
             // 

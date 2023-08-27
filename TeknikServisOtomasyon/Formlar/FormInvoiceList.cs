@@ -70,5 +70,12 @@ namespace TeknikServisOtomasyon.Formlar
             db.SaveChanges();
             MessageBox.Show("Fatura sisteme kaydedilmiştir. Kalem girişi yapabilirsiniz !");
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FormFaturaKalemPopUp popUp = new FormFaturaKalemPopUp();
+            popUp.id = int.Parse(gridView1.GetFocusedRowCellValue("ID").ToString());
+            popUp.Show();
+        }
     }
 }

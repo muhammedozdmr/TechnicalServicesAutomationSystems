@@ -207,6 +207,12 @@
     <Compile Include="Formlar\FormFaturaKalemi.Designer.cs">
       <DependentUpon>FormFaturaKalemi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FormFaturaKalemPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FormFaturaKalemPopUp.Designer.cs">
+      <DependentUpon>FormFaturaKalemPopUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FormGauge.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,7 +333,13 @@
     <Compile Include="TBLHAKKIMIZDA.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="TBLILCELER.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="TBLILETISIM.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLILLER.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="TBLKATEGORI.cs">
@@ -412,6 +424,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormFaturaKalemi.resx">
       <DependentUpon>FormFaturaKalemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FormFaturaKalemPopUp.resx">
+      <DependentUpon>FormFaturaKalemPopUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FormGauge.resx">
       <DependentUpon>FormGauge.cs</DependentUpon>

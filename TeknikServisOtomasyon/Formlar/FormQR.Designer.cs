@@ -54,7 +54,7 @@
             // btnQR
             // 
             this.btnQR.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnQR.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnQR.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQR.ImageOptions.Image")));
             this.btnQR.Location = new System.Drawing.Point(149, 94);
             this.btnQR.Name = "btnQR";
             this.btnQR.Size = new System.Drawing.Size(119, 43);

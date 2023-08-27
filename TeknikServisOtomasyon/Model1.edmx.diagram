@@ -32,6 +32,9 @@
         <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNHAREKET_TBLURUN" ManuallyRouted="false" />
         <EntityTypeShape EntityType="DbTeknikServisModel.TBLHAKKIMIZDA" Width="1.5" PointX="12.375" PointY="7.75" />
         <EntityTypeShape EntityType="DbTeknikServisModel.TBLILETISIM" Width="1.5" PointX="8.375" PointY="12.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLILLER" Width="1.5" PointX="12.375" PointY="11" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.TBLILCELER" Width="1.5" PointX="14.625" PointY="10.875" />
+        <AssociationConnector Association="DbTeknikServisModel.fk_il_no" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

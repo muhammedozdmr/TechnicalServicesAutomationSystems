@@ -24,9 +24,17 @@ namespace TeknikServisOtomasyon.Formlar
             t.ACIKLAMA = txtDetails.Text;
             t.TARIH = dateCreate.Value;
             t.SERINO = txtSerialNumber.Text;
+            
             db.TBLURUNTAKIP.Add(t);
-            db.SaveChanges();
             MessageBox.Show("Ürün arıza detayları eklendi");
+
+            //DURUM GÜNCELLEME
+            TBLURUNKABUL tb = new TBLURUNKABUL();
+            int urunId = int.Parse(id);
+            var deger = db.TBLURUNKABUL.Find(urunId);
+            deger.URUNDURUMDETAY = cmbStatus.Text;
+            db.SaveChanges();
+            MessageBox.Show("Ürün arıza detayları güncellendi");
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -36,6 +44,12 @@ namespace TeknikServisOtomasyon.Formlar
         private void CloseForm()
         {
             this.Close();
+        }
+
+        public string id, serino;
+        private void FormArizaDetaylar_Load(object sender, EventArgs e)
+        {
+            txtSerialNumber.Text = serino;
         }
     }
 }

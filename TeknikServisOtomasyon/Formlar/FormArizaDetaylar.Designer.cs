@@ -39,6 +39,8 @@
             this.txtDetails = new System.Windows.Forms.RichTextBox();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -63,7 +65,7 @@
             this.labelControl2.Appearance.Options.UseBackColor = true;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(33, 113);
+            this.labelControl2.Location = new System.Drawing.Point(33, 102);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(42, 18);
             this.labelControl2.TabIndex = 0;
@@ -121,7 +123,7 @@
             // 
             // dateCreate
             // 
-            this.dateCreate.Location = new System.Drawing.Point(33, 130);
+            this.dateCreate.Location = new System.Drawing.Point(33, 121);
             this.dateCreate.Name = "dateCreate";
             this.dateCreate.Size = new System.Drawing.Size(200, 20);
             this.dateCreate.TabIndex = 2;
@@ -154,12 +156,43 @@
             this.btnCancel.Text = "VAZGEÇ";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl3.Appearance.Options.UseBackColor = true;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(33, 150);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(47, 18);
+            this.labelControl3.TabIndex = 56;
+            this.labelControl3.Text = "DURUM:";
+            // 
+            // cmbStatus
+            // 
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Items.AddRange(new object[] {
+            "ÜRÜN KAYDOLDU",
+            "PARÇA BEKLİYOR",
+            "MESAJ BEKLİYOR",
+            "İPTAL EDİLDİ",
+            "FİYAT VERİLDİ",
+            ""});
+            this.cmbStatus.Location = new System.Drawing.Point(33, 171);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(200, 21);
+            this.cmbStatus.TabIndex = 57;
+            // 
             // FormArizaDetaylar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(570, 212);
+            this.Controls.Add(this.cmbStatus);
+            this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtDetails);
@@ -173,6 +206,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormArizaDetaylar";
             this.Text = "FormArizaDetaylar";
+            this.Load += new System.EventHandler(this.FormArizaDetaylar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,5 +224,7 @@
         private System.Windows.Forms.RichTextBox txtDetails;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private System.Windows.Forms.ComboBox cmbStatus;
     }
 }

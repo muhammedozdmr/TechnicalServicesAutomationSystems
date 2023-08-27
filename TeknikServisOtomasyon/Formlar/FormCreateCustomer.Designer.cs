@@ -33,10 +33,8 @@
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txtTown = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txtCity = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtMail = new DevExpress.XtraEditors.TextEdit();
@@ -69,9 +67,9 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.ımageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             this.cancelButton = new DevExpress.XtraEditors.PictureEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTown.Properties)).BeginInit();
+            this.cmbCity = new DevExpress.XtraEditors.LookUpEdit();
+            this.cmbTown = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCity.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
@@ -95,6 +93,8 @@
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ımageSlider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancelButton.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCity.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTown.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancel
@@ -127,21 +127,6 @@
             this.panel6.Size = new System.Drawing.Size(200, 3);
             this.panel6.TabIndex = 51;
             // 
-            // txtTown
-            // 
-            this.txtTown.EditValue = "İlçe";
-            this.txtTown.Location = new System.Drawing.Point(645, 429);
-            this.txtTown.Name = "txtTown";
-            this.txtTown.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtTown.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTown.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.txtTown.Properties.Appearance.Options.UseBackColor = true;
-            this.txtTown.Properties.Appearance.Options.UseFont = true;
-            this.txtTown.Properties.Appearance.Options.UseForeColor = true;
-            this.txtTown.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtTown.Size = new System.Drawing.Size(173, 26);
-            this.txtTown.TabIndex = 50;
-            // 
             // pictureEdit6
             // 
             this.pictureEdit6.EditValue = ((object)(resources.GetObject("pictureEdit6.EditValue")));
@@ -163,21 +148,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 3);
             this.panel5.TabIndex = 48;
-            // 
-            // txtCity
-            // 
-            this.txtCity.EditValue = "İl";
-            this.txtCity.Location = new System.Drawing.Point(645, 349);
-            this.txtCity.Name = "txtCity";
-            this.txtCity.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtCity.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCity.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.txtCity.Properties.Appearance.Options.UseBackColor = true;
-            this.txtCity.Properties.Appearance.Options.UseFont = true;
-            this.txtCity.Properties.Appearance.Options.UseForeColor = true;
-            this.txtCity.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtCity.Size = new System.Drawing.Size(173, 26);
-            this.txtCity.TabIndex = 47;
             // 
             // pictureEdit5
             // 
@@ -561,7 +531,42 @@
             this.cancelButton.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.cancelButton.Size = new System.Drawing.Size(48, 54);
             this.cancelButton.TabIndex = 70;
-            this.cancelButton.EditValueChanged += new System.EventHandler(this.cancelButton_EditValueChanged);
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // cmbCity
+            // 
+            this.cmbCity.Location = new System.Drawing.Point(645, 347);
+            this.cmbCity.Name = "cmbCity";
+            this.cmbCity.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.cmbCity.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbCity.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmbCity.Properties.Appearance.Options.UseBackColor = true;
+            this.cmbCity.Properties.Appearance.Options.UseFont = true;
+            this.cmbCity.Properties.Appearance.Options.UseForeColor = true;
+            this.cmbCity.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.cmbCity.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbCity.Properties.NullText = "İl";
+            this.cmbCity.Size = new System.Drawing.Size(200, 28);
+            this.cmbCity.TabIndex = 71;
+            this.cmbCity.EditValueChanged += new System.EventHandler(this.cmbCity_EditValueChanged);
+            // 
+            // cmbTown
+            // 
+            this.cmbTown.Location = new System.Drawing.Point(645, 423);
+            this.cmbTown.Name = "cmbTown";
+            this.cmbTown.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.cmbTown.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbTown.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cmbTown.Properties.Appearance.Options.UseBackColor = true;
+            this.cmbTown.Properties.Appearance.Options.UseFont = true;
+            this.cmbTown.Properties.Appearance.Options.UseForeColor = true;
+            this.cmbTown.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.cmbTown.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbTown.Properties.NullText = "İlçe";
+            this.cmbTown.Size = new System.Drawing.Size(200, 28);
+            this.cmbTown.TabIndex = 72;
             // 
             // FormCreateCustomer
             // 
@@ -571,6 +576,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(1232, 500);
+            this.Controls.Add(this.cmbTown);
+            this.Controls.Add(this.cmbCity);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel7);
@@ -591,10 +598,8 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.txtTown);
             this.Controls.Add(this.pictureEdit6);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.pictureEdit5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.txtMail);
@@ -613,9 +618,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCreateCustomer";
             this.Load += new System.EventHandler(this.FormCreateCustomer_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txtTown.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCity.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
@@ -639,6 +642,8 @@
             this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ımageSlider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancelButton.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCity.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTown.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -647,10 +652,8 @@
         private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private System.Windows.Forms.Panel panel6;
-        private DevExpress.XtraEditors.TextEdit txtTown;
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
         private System.Windows.Forms.Panel panel5;
-        private DevExpress.XtraEditors.TextEdit txtCity;
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.TextEdit txtMail;
@@ -683,5 +686,7 @@
         private System.Windows.Forms.Panel panel12;
         private DevExpress.XtraEditors.Controls.ImageSlider ımageSlider1;
         private DevExpress.XtraEditors.PictureEdit cancelButton;
+        private DevExpress.XtraEditors.LookUpEdit cmbCity;
+        private DevExpress.XtraEditors.LookUpEdit cmbTown;
     }
 }

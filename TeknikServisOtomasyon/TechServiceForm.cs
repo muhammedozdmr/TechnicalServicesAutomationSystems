@@ -74,7 +74,7 @@ namespace TeknikServisOtomasyon
 
         private void barCustomerList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FormCustomerList formCustomer = new Formlar.FormCustomerList();
+            Formlar.lblEnFazlaCariIL formCustomer = new Formlar.lblEnFazlaCariIL();
             formCustomer.MdiParent = this;
             formCustomer.Show();
         }
